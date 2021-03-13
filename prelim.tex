@@ -1,0 +1,207 @@
+%!TEX root = UG_PhD_Defense.tex
+\begin{frame}{\large Preliminaries: Finite field basics}
+\bi
+	\item Fields - set of elements over which operations $(+,\cdot,/)$ can be performed (non-zero elements)
+	\bi
+		\item Ex. $\R,\Q,\C$
+	\ei
+	\vspace{0.1in}
+	\item Finite fields (Galois fields) - Finite set of elements
+	\bi
+		\item Ex. $\F_q$, where $q=p^n,~p~=~prime,~n \in \Z_{\geq 1}$ 
+		\bi
+		\item When $n=1$, $\F_p = \Z_p \pmod{p}$
+		\ei
+		\item Every digital circuit represents a function over Galois fields
+	\ei
+	\vspace{0.1in}
+	\item We are interested in fields of type $\Fkn$
+	\bi
+		\item Binary Galois extension fields with characteristic $2$ ($p$)
+		\bi
+			\item Bit-vector of size $n$ represents $2^n$ distinct elements
+		\ei
+		\item Finite field properties allow elegant application of algebraic geometry techniques
+		% \bi
+		% 	\item Practical applications to hardware design, debug, verification, and rectification
+		% \ei
+	\ei
+\ei
+\end{frame}
+
+\begin{frame}{\large Problem Statement and Objective}
+\bi
+	\item A multivariate specification polynomial $f \in \Fkn$
+	\bi
+		\item $n$ is the operand width
+		\item Ex. $Z = A \cdot B \pmod{P_n(x)}$ over $\Fkn$
+	\ei 
+	\vspace{0.1in}
+	\item A faulty circuit implementation $C$ for specification $f$ 
+	\bi
+		\item Model gates as polynomials over $\Fkn$
+	\ei
+	\vspace{0.1in}
+	\item A primitive polynomial $P_n(x)$ used to construct $\Fkn$
+	\bi
+		\item $\Fkn$ constructed as $\Fkn = \F_2[x] \pmod{ P_n(x)}$
+		\item Let $\ga$ be one of the roots of $P_n(x)$, i.e. $P_n(\ga) = 0$
+	\ei
+	 % , s.t. $P_n(\ga) = 0$
+	\vspace{0.1in}
+	\item A set of targets $m$ from $C$
+	\vspace{0.1in}
+	\vspace{0.1in}
+	\item Check if $C$ is rectifiable at these $m$ targets 
+
+
+\ei
+\end{frame}
+
+\begin{frame}{\large Circuit Modeling}
+\bi
+	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkn)$
+\ei
+	\begin{align*}
+		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
+		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
+		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
+		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
+	\end{align*}
+
+\bi
+	\item Bit-level to word-level correspondence
+\ei
+\begin{equation*}
+\begin{split}
+ Output:  Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
+ Input:  A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1}
+\end{split}
+\end{equation*}
+\end{frame}
+
+\begin{frame}{\large Algebraic Geometry: Ideals}
+\bi
+	\item Let $R=\ftnwring$
+	\bi
+		\item $\{f_1, \dots, f_s\} \in R$
+	\ei
+	\vspace{0.1in}
+	\item In our context
+	\bi
+		\item $x_1,\dots,x_d$: Variables (nets of the circuit)
+		\item $Z$: bit-vector representation for variables
+		\item $f_1, \dots, f_s$: Polynomials from the circuit (logic gate relations)
+	\ei
+	\vspace{0.1in}
+	\item $J = \langle F \rangle = \langle f_1, \dots, f_s \rangle \subseteq R$
+	\bi
+		\item $\{h_1f_1 + \cdots + h_sf_s:~h_i \in R\}$
+	\ei
+	\vspace{0.1in}
+	\item Vanishing Ideal: $J_0 = \langle F_0 \rangle =  \langle x_1^2+x_1,\dots,x_d^2+x_d, Z^{2^n}+Z\rangle$
+	\vspace{0.1in}
+	\item Polynomials $f_1, \dots, f_s$: {\it basis} or {\it generators} of $J$
+\ei
+\end{frame}
+
+\begin{frame}{\large Algebraic Geometry: Varieties}
+\bi
+	% \item Let $J = \langle F \rangle = \langle f_1, \dots, f_s \rangle \subseteq R=\ftnwring$
+	% \vspace{0.1in}
+	% \item Vanishing Ideal: $J_0 = \langle F_0 \rangle =  \langle x_1^2+x_1,\dots,x_d^2+x_d, Z^{2^n}+Z\rangle$
+	\item $J = \langle F \rangle = \langle f_1, \dots, f_s \rangle \subseteq \ftnwring $
+	\vspace{0.1in}
+	\item Let $\bm{a} = (a_1,\dots,a_d) \in \Fkn^d$ $s.t.$ $f_1(\bm{a}) = \cdots = f_s(\bm{a})=0$
+\ei
+\begin{align*}
+V(J) = \text{Set of all }\{\bm{a}\} \text{ s.t. }\begin{cases}
+f_1(\bm{a}) = 0, \\
+f_2(\bm{a}) = 0, \\
+\vdots \\
+f_s(\bm{a}) = 0
+\end{cases}
+\end{align*}
+\bi
+\item $V(J)$ correspond to function mappings (Truth tables)
+\ei
+\end{frame}
+
+\begin{frame}{\large \Grobner Basis and Ideal membership}
+\bi
+	\item An ideal $J = \langle f_1,\dots,f_s\rangle \subseteq R$ can have many generators. 
+	\bi
+		\item $J = \langle p_1,\dots,p_m\rangle = \dots = \langle g_1,\dots,g_t\rangle$
+	\ei
+	% \bi
+	% 	\item Same ideal different sets of generators
+	% \ei
+	\vspace{0.1in}
+	\item \Grobner Basis (GB) one such set with special properties
+	\bi
+		\item Determine presence or absence of solutions (varieties)
+		% \item Determine dimension of varieties.
+		\item Determine ideal membership of a polynomial
+	\ei
+	\vspace{0.1in}
+	\item Let $G = \{g_1,\dots,g_t \}$, and $J =  \langle f_1,\dots,f_s\rangle = \langle g_1,\dots,g_t\rangle$
+	\bi
+	\item $G$ is a \Grobner basis of $J \iff \forall f \in J, f \xrightarrow[]{g_1,\dots,g_t}_+ 0$ 
+	% \ei
+	% \vspace{0.1in}
+	\item Ideal membership: Let $f$ be a polynomial in $R$:
+	\bi
+		\item if $f \xrightarrow[]{g_1,\dots,g_t}_+ 0$, then $f$ is a member of $J$. 
+	\ei
+	\ei
+\ei
+\begin{figure}
+\centering
+\includegraphics[scale=0.35]{GB.png}
+\end{figure}
+\end{frame}
+
+% \begin{frame}{\large Extended \Grobner Basis}
+
+% \bi
+% \item Helps relate an ideal with any generating set contained in the ideal
+
+% %\begin{center}
+% \begin{equation*}\label{eqn:matrix}
+% \begin{bmatrix} g_1 \\ g_2 \\ \vdots \\ g_t \end{bmatrix}  =  M \cdot
+% \begin{bmatrix} f_1 \\ f_2 \\ \vdots \\ f_s \end{bmatrix}
+% \end{equation*}
+% \item M is a $t\times s$ matrix of polynomials
+
+% \item if $f \in J$, then
+% \bi
+% \item $f = u_1g_1 + u_2g_2+ \dots+ u_tg_t$
+% \item $f = v_1f_1 +\dots+v_sf_s$
+% \ei
+% \item Used in computation of rectification function
+% \ei
+% \end{frame}
+
+
+%How are two ideals and their varieties related? 
+%Analyzing Ideal 𝐽 is not enough Need to analyze ideal 𝐼(𝑉( 𝐽))
+%SNS reasons about the ideal of polynomials that vanish on V(J).
+
+
+% \begin{frame}{\large Strong Nullstellensatz}
+% \bi
+% \item Given an ideal $J\subset R$ and $V(J) \subseteq \Fq^d$ 
+% % the {\it ideal of polynomials that vanish on} $V(J)$ is 
+% \bi
+% 	\item $I(V(J)) = \{ f \in R : \forall \bm{a} \in V(J), f(\bm{a}) = 0\}$.
+% \ei
+
+% \item If $f$ vanishes on $V(J)$, then $f \in I(V(J))$. 
+
+% \item The Strong Nullstellensatz characterizes $I(V(J))$ over $\Fq$
+% \bi
+% 	\item Over finite fields $\Fq$, $I(V_{\Fq}(J)) = J + J_0$.
+% 	\item We will use this to formulate rectification check
+% \ei
+% \ei
+% \end{frame}

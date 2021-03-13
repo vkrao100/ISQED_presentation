@@ -1,0 +1,217 @@
+%\documentclass[pdf,final,colorBG,slideColor]{prosper}
+\documentclass[xcolor=dvipsnames]{beamer}
+%%\usetheme{default}
+\usecolortheme[named=Maroon]{structure}
+% \usetheme{Boadilla}
+\usetheme{Madrid}
+\useoutertheme{default}%[footline=empty]{infolines}
+\setbeamertemplate{page number in head/foot}[framenumber]
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+%\RequirePackage{amssymb, mathptm}
+\RequirePackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{amsmath}
+% \usepackage{graphicx}
+\usepackage{helvet}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{comment}
+\usepackage{cases}
+\usepackage{xcolor}
+\usepackage{epstopdf}
+\usepackage[normalem]{ulem}
+\usepackage{diagbox}
+\usepackage{bm}
+\usepackage{hhline}
+\usepackage{caption}
+\usepackage{xspace}
+\usepackage{colortbl}
+
+
+
+% \bibliographystyle{plain}
+\input{myformulae.tex}
+
+% \usepackage{helvet}
+% \usepackage{enumerate}
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{graphicx}
+% \usepackage{ulem}
+% \usepackage{multirow}
+\usepackage{comment}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{polynom}
+
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{multirow,hhline,tabularx,subfig,centernot}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+%% To remove numbering when allowing frame breaks
+\setbeamertemplate{frametitle continuation}{}
+
+\captionsetup{justification=centering}
+
+ \setbeamertemplate{footline}{%
+        \includegraphics[scale=0.05]{ISQED_logo.pdf}%
+        \hfill%
+        \usebeamercolor[fg]{page number in head/foot}%
+        \usebeamerfont{page number in head/foot}%
+        \insertframenumber\,/\,\inserttotalframenumber\kern1em%
+ }
+
+% \theoremstyle{plain}
+% \theoremstyle{definition}
+% % \theoremstyle{remark}
+% % \theoremstyle{mystyle}
+
+% \newtheorem{Algorithm}{Algorithm}[section]
+
+% \newtheorem{Definition}{Definition}[section]
+% \numberwithin{Definition}{section}
+
+% \newtheorem{Example}{Example}[section]
+% \numberwithin{Example}{section}
+
+% \newtheorem{Proposition}{Proposition}[section]
+
+% \newtheorem{Lemma}{Lemma}[section]
+% \numberwithin{Lemma}{section}
+
+% \newtheorem{Theorem}{Theorem}[section]
+% \numberwithin{Theorem}{section}
+
+% \newtheorem{Corollary}{Corollary}[section]
+% \newtheorem{Problem}{Problem}[section]
+% \newtheorem{Problem Setup}{Problem Setup}[section]
+% \newtheorem{Conjecture}{Conjecture}[section]
+% \newtheorem{Result}{Result}[section]
+
+% \title[]{Debug and Rectification of Arithmetic Circuits using Symbolic Computer Algebra}
+
+% \author[]{{\bf Vikas Rao} \texorpdfstring{\\} 
+% A Ph.D. Dissertation Proposal}
+% \institute[]{
+% \includegraphics[scale=0.05]{Ulogo_1200px.png}\\
+% Electrical \& Computer Engineering\\
+% University of Utah\\
+% % utkarsh.gupta@utah.edu\\
+% % \url{http://www.eng.utah.edu/~utkarshg}\\
+% }
+
+\title[]{Word-Level Multi-Fix Rectifiability of Finite Field Arithmetic Circuits}
+
+\author[]{
+\includegraphics[scale=0.10]{ISQED_logo.pdf}\\
+ {\bf Vikas Rao$^1$}, Irina Ilioaea$^2$, Haden Ondricek$^1$, 
+Priyank Kalla$^1$,  and Florian Enescu$^3$} 
+\institute[]{
+$^1$Electrical \& Computer Engineering, University of Utah\\
+$^2$Department of Mathematics, Louisiana State University Shreveport\\
+$^3$Mathematics \& Statistics, Georgia State University
+% utkarsh.gupta@utah.edu\\
+% \url{http://www.eng.utah.edu/~utkarshg}\\
+}
+
+%\slideCaption{}
+
+%% Images
+% \pgfdeclareimage[width=.4in]{fg:logo}{/Users/Kalla/teaching/Comp-Algebra-Course/lectures/old_ulogo.eps} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------- titlepage ----------------------------------------------%
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Introduction
+
+% Took \mathcal{N}us a long while to come up with CI in FF; 
+% mention CI have been explored in FOL; PL; while not in FF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Preliminaries
+%Algebraic Geometry: study of zeros of polynomials
+%unlike SAT solvers, we cant solve the polynomial equations,
+%instead we analyze the polynomials themselves to comment
+%about the zeros
+
+\input{intro}
+\input{prelim}
+\input{sfr}
+\input{mfr}
+\input{objs}
+
+% \input{bkp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \begin{frame}{\large Research Objective: To make the approach scalable}
+% \bi
+% 	\item Exploited ZDDs for bit-level $GB$ reduction (for verification)
+% 	\bi
+% 		\item Many orders of magnitude improvement
+% 	\ei
+% 	\item Utilize ZDD based reduction for $GB$ computations in our approach
+% \ei
+% \end{frame}
+
+% \begin{frame}{\large Proposed Timeline}
+% \begin{itemize}
+% 	\item Current status: 
+% 	\bi
+% 	\item Preliminary investigations on single-fix rectification 
+% 	\item Result on Craig Interpolants. 
+% 	\item Use of interpolants to compute rectification function
+% 	\item Experiments on finite field arithmetic benchmarks
+% 	\ei
+% 	\item Fall 2018: \begin{itemize}
+% 			\item Algorithms to explore the interpolant lattice to obtain low-cost rectification functions 
+% 			\item Improve the scalability of the procedure. \\
+% 			Investigate the use of ZDD based reduction procedure 
+% 			\end{itemize}
+% \end{itemize}
+% \end{frame}
+% \begin{frame}{\large Proposed Timeline}
+% \bi
+% 	\item Spring/Summer 2019: \begin{itemize}
+% 	\item Compute rectification functions in internal circuit variables 
+% 	\item Investigate extension to multi-fix rectification
+% 	\end{itemize}
+% 	\item Fall 2019: Evaluate data. Write and defend the dissertation. 
+% \ei
+% \end{frame}
+
+
+\input{bib}
+
+\begin{frame}{\ }
+\begin{center}
+{\bf \Large THANK YOU!} \\ \ \\  
+Questions?
+\end{center}
+\end{frame}
+
+% \input{bkp}
+
+\bibliographystyle{IEEEtran}
+% \bibliography{present}
+% \nocite{Utkarsh:ETS19,utkarsh:book-chapter,Utkarsh:VLSI18,vikas:fmcad18,utkarsh:tcad17,Utkarsh:IWLS18,utkarsh:iwls17}
+
+\end{document}
+

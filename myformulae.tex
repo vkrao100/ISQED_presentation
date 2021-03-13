@@ -1,0 +1,92 @@
+\newcommand{\B}{{\mathbb{B}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\beqarr}{\begin{eqnarray}}
+\newcommand{\eeqarr}{\end{eqnarray}}
+\newcommand{\ov}{\bar}
+\newcommand{\xor}{\bigoplus}
+\newcommand{\Fm}{{\mathbb{F}}}
+\newcommand{\myfontsize}{\fontsize{7}{9}\selectfont}
+\newcommand{\Ftwo}{{\mathbb{F}}_{2}}
+\newcommand{\Zn}{{\mathbb{Z}}_{n}}
+\newcommand{\Zp}{{\mathbb{Z}}_{p}}
+\newcommand{\F}{{\mathbb{F}}}
+\newcommand{\FF}{{\mathcal{F}}}
+\newcommand{\Fbar}{{\overline{\mathbb{F}}}}
+\newcommand{\Fq}{{\mathbb{F}}_{q}}
+\newcommand{\Fqbar}{\overline{\mathbb{F}}_q}
+\newcommand{\Fkk}{{\mathbb{F}}_{2^k}}
+\newcommand{\Zkk}{{\mathbb{Z}}_{2^k}}
+\newcommand{\Fkkx}[1][x]{\ensuremath{\mathbb{F}}_{2^k}[#1]\xspace}
+\newcommand{\Grobner}{Gr\"{o}bner\xspace}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\impl}{{\it Impl}}
+\newcommand{\spec}{{\it Spec}}
+% \newcommand{\spec}{{\it Spec}\xspace}
+% \newcommand{\impl}{{\it Impl}\xspace}
+\newcommand{\idealf}{{F = \{f_1, \dots, f_s\}}}
+\newcommand{\idealj}{{J = \langle f_1, \dots, f_s\rangle}}
+\newcommand{\idealg}{{J = \langle g_1, \dots, g_t\rangle}}
+\newcommand{\vfqj}{{V_{\Fq}(J)}}
+\newcommand{\vfkkj}{{V_{\Fkk}(J)}}
+\newcommand{\G}{{\mathcal{G}}}
+% \newcommand{\alert}[1]{\textcolor{red}{#1}}
+\newcommand{\Fkn}{{\mathbb{F}}_{2^n}}
+\newcommand{\Fkm}{{\mathbb{F}}_{2^m}}
+\newcommand{\vfqjo}{{V_{\Fq}(J_0)}}
+\newcommand{\vfbqj}{{V_{\overline{\Fq}}(J)}}
+\newcommand{\vfbqjo}{{V_{\overline{\Fq}}(J_0)}}
+\newcommand{\vfbqjjo}{{V_{\overline{\Fq}}(J+J_0)}}
+\newcommand{\In}{\mathcal{I}_n}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\mN}{\mathcal{N}}
+\newcommand{\Ic}{\mathcal{I}_c}
+\newcommand{\Oa}{\mathcal{O}_a}
+\newcommand{\Oao}{\mathcal{O}_{a_1}}
+\newcommand{\Oat}{\mathcal{O}_{a_2}}
+
+%%% Added by Utkarsh %%%
+\newcommand{\Va}{{V_A}}
+\newcommand{\Vb}{{V_B}}
+\newcommand{\Vc}{{V_C}}
+\newcommand{\Vbc}{{V_{B,C}}}
+\newcommand{\Vabc}{{V_{A,B,C}}}
+\newcommand{\Vac}{{V_{A,C}}}
+\newcommand{\acf}{\bar{F}_q}
+\newcommand{\Vacf}{V_{\bar{F}_q}}
+\newcommand{\w}{\wedge}
+\newcommand{\al}{\alpha}
+\newcommand{\ga}{\gamma}
+\newcommand{\be}{\beta}
+\newcommand{\vpi}{V_{X_{PI}}}
+\newcommand{\uc}{U(X_{PI})}
+\newcommand{\xpi}{X_{PI}}
+\newcommand{\fqring}{\Fq[x_1,\dots,x_d]}
+\newcommand{\ftring}{\F_2[x_1,\dots,x_d]}
+\newcommand{\ftkring}{\Fkk[x_1,\dots,x_d]}
+\newcommand{\ftnring}{\Fkn[x_1,\dots,x_d]}
+\newcommand{\ftnwring}{\Fkn[x_1,\dots,x_d,Z]}
+\newcommand{\debug}[1]{\textcolor{gray}{[ #1 ]}}
+\newcommand{\blu}{\color{blue}}
+\newcommand{\green}{\color{green}}
+\newcommand{\yellow}{\color{yellow}}
+\newcommand{\red}{\color{red}}
+\newcommand{\Func}{{\mathcal{F}}}
+\newcommand{\jz}[1]{J_0^{#1}}
+\newcommand{\jzpi}{J_0^{\xpi}}
+\newcommand{\fzpi}{F_0^{\xpi}}
+\newcommand{\jzc}{J_0^{C}}
+\newcommand{\Ftx}{\F_2^{\xpi}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\algnewcommand\algorithmicinput{\textbf{Assume:}}	
+\algnewcommand\Assume{\item[\algorithmicinput]}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
