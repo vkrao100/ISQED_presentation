@@ -23,7 +23,7 @@
 \bi
 	\item Enumerate rectification points functionally and match the circuitry of patches implicitly
 	\item Scalability achieved by modeling computations in symbolic sampling domain
-	\item Doesn't discuss application to arithmetic circuits
+	% \item Doesn't discuss application to arithmetic circuits
 \ei
 \ei
 \end{frame}
@@ -60,57 +60,43 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large MFR example: Word-level representation}
+\begin{frame}{\large Application: Word-level representation}
 \begin{figure}[hbt]
 \centering
     \includegraphics[scale = 0.24]{mas_3_ddc_mfr_b.pdf}
     \caption*{
-    Patch function modeled as a 2-bit-vector word ($m$=2) $W=\{r_3,rr_3\} = r_3+\be rr_3$ ($w_0=r_3, w_1=rr_3$).}
+    Patch function modeled as a 2-bit-vector word ($m$=2) $W=\{r_3,rr_3\} = r_3+\be\cdot rr_3$, ($w_0=r_3, w_1=rr_3$).}
     \label{fig:mas_bug_Wb}
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Mathematical Challenge: Picking $P_k(x)$}
-\bi 
 
-	\item Need to represent and manipulate circuit polynomials and the patch function polynomials
-		in one unified domain (composite field)
-	% \bi
-	% 	\item How to relate algebraic numbers of lower field to algebraic numbers of higher fields?
-	% \ei
-	\vspace{0.1in}
-	\item Selecting arbitrary $P_k(x)$ leads to erroneous results 
-	\vspace{0.1in}
-	\item Solved using Univariate Polynomial Factorization
-
-\ei
-\end{frame}
-
-
-\begin{frame}{\large MFR Notations: Composite Field}
+\begin{frame}{\large MFR Notation: Field setup}
 \bi
-	\item For a given circuit with data-path size $n$
+	\item Circuit with data-path size $n$ modeled over $\Fkn$
 	\bi
-		\item Polynomials modeled over $R=\Fkn[Z,A,x_1,\dots,x_d]$
+		% \item Polynomials modeled over $R=\Fkn[Z,A,x_1,\dots,x_d]$
+		% \bi
+		% 	\item $\{x_1, \dots$ $, x_d\}$ are all the bit-level variables (nets) in the circuit
+		% 	\item $Z$ and $A$ are the word-level output and input, respectively
+		% \ei
+		\item $\Fkn$ is constructed as $\Fkn = \Ftwo[x]\pmod{P_n(x)}$
 		\bi
-			\item $\{x_1, \dots$ $, x_d\}$ are all the bit-level variables (nets) in the circuit
-			\item $Z$ and $A$ are the word-level output and input, respectively
-		\ei
-		\item $\Fkn$ is constructed as $\Fkn = \Ftwo[X]\pmod{P_n(X)}$
-		\bi
-			\item $P_n(X) \in \F_2[X]$ is a given degree-$n$ primitive polynomial; $P_n(\ga) =0$ 
+			\item $P_n(x) \in \F_2[x]$ is a given degree-$n$ primitive polynomial; $P_n(\ga) =0$ 
 			% [$\ga$ as one of its root].
 		\ei
 		\item  The word-level polynomials for $Z,A$ are modeled as:
 		\bi
-			\item $f_z: Z + \sum_{i=0}^{n-1}\ga^iz_i;f_a: A + \sum_{i=0}^{n-1}\ga^ia_i;$ 
+			\item $f_Z: Z + \sum_{i=0}^{n-1}\ga^iz_i,~f_A: A + \sum_{i=0}^{n-1}\ga^ia_i$ 
 		\ei
 	\ei 
-	\item Patch $W$ for $m$ targets is computed as a polynomial function in the field $\Fkm$
+	\vspace{0.1in}
+	\vspace{0.1in}
+	\item Patch size $m$ modeled over $\Fkm$
 	\bi
-		\item $\Fkm$ is constructed as $\Fkm = \Ftwo[X]\pmod{P_m(X)}$
+		\item $\Fkm$ is constructed as $\Fkm = \Ftwo[x]\pmod{P_m(x)}$
 		\bi
-			\item We select a degree-$m$ primitive polynomial $P_m(X)\in \F_2[X]$; $P_m(\be) =0$ 
+			\item We select a degree-$m$ primitive polynomial $P_m(x)\in \F_2[x]$; $P_m(\be) =0$ 
 			% [$\be$ as one of its root].
 		\ei
 		\item  The word-level polynomial for $W$ is modeled as:
@@ -122,20 +108,35 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large MFR Notations: Composite Field}
+% \begin{frame}{\large Mathematical Challenge: Picking $P_k(x)$}
+% \bi 
+
+% 	\item Need to represent and manipulate circuit polynomials and the patch function polynomials in one unified domain (composite field)
+% 	% \bi
+% 	% 	\item How to relate algebraic numbers of lower field to algebraic numbers of higher fields?
+% 	% \ei
+% 	\vspace{0.1in}
+% 	\item Selecting arbitrary $P_k(x)$ leads to erroneous results 
+% 	\vspace{0.1in}
+% 	\item Solved using Univariate Polynomial Factorization
+
+% \ei
+% \end{frame}
+
+\begin{frame}{\large MFR Challenges: $\Fkk$ and $P_k(x)$}
 \bi
-	\item Determine the smallest single field ($\Fkk$) to operate both circuit ($\Fkn$) and patch ($\Fkm$)
-	\vspace{0.1in}
+	% \item Determine the smallest single field ($\Fkk$) to operate both circuit ($\Fkn$) and patch ($\Fkm$)
+	% \vspace{0.1in}
 	\item Smallest $k$ is $LCM(n,m)$
 	\bi
 		\item $\Fkk \supset \Fkn$ and $\Fkk \supset \Fkm$
-		\item $\Fkk$ is constructed as $\Fkk = \Ftwo[X]\pmod{P_k(X)}$
+		\item $\Fkk$ is constructed as $\Fkk = \Ftwo[x]\pmod{P_k(x)}$
 		\bi
-			\item $P_k(X)$ is a degree-$k$ primitive polynomial; $P_k(\al) =0$ 
+			\item $P_k(x)$ is a degree-$k$ primitive polynomial; $P_k(\al) =0$ 
 		\ei
 	\ei
 	\vspace{0.1in}
-	\item  Mathematical challenge: Given $P_n(X)$ and $P_m(X)$, compute $P_k(X)$ such that
+	\item  Mathematical challenge: Given $P_n(x)$ and $P_m(x)$, compute $P_k(x)$ such that
 	$P_n(\ga)= P_m(\be)=P_k(\al)=0$
 	\vspace{0.1in}
 	\bi
@@ -148,92 +149,100 @@
 
 \end{frame}
 
-\begin{frame}{\large MFR Notations: Univariate Polynomial factorization (UPF) }
+% \begin{frame}{\large MFR Notations: Univariate Polynomial factorization (UPF) }
+% \bi
+% 	\item Given a monic univariate polynomial $f \in \F_q[X]$, where $\F_q$ is any finite field
+% 	\vspace{0.1in}
+% 	\bi 
+% 		\item Find a complete factorization $f = f_1^{e_1}\cdot f_2^{e_2}\cdots f_l^{e_l}$ 
+% 		\bi
+% 			\item Where $f_1, f_2,\dots, f_l$ are pairwise distinct monic 
+% 			irreducible polynomials in $\F_q[X]$ and $e_1,\dots,e_l$ are positive integers.
+% 		\ei
+% 	\ei
+% 	\vspace{0.1in}
+% 	% \item We employ existing implementation of UPF from computer algebra tool {\it SINGULAR} 
+% \ei
+% \end{frame}
+
+\begin{frame}{\large Contribution: Computing $P_k(x)$}
 \bi
-	\item Given a monic univariate polynomial $f \in \F_q[X]$, where $\F_q$ is any finite field
+	\item Obtain UPFs of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$ in $\F_2[x]$
+	% \bi
+	% 	\item Coefficients will be in $\Ftwo$ and degrees will be less than $\lambda$ and $\mu$, respectively.
+	% 	\bi
+	% 		\item $P_n(x^{\lambda})=P_{n1}^{a1}\cdot P_{n2}^{a2}\cdots P_{nl}^{al}$, and 
+	% 		\item $P_m(x^{\mu}) = P_{m1}^{b1}\cdot P_{m2}^{b2}\cdots P_{mg}^{bg}$
+	% 	\ei
+	% \ei
 	\vspace{0.1in}
-	\bi 
-		\item Find a complete factorization $f = f_1^{e_1}\cdot f_2^{e_2}\cdots f_l^{e_l}$ 
-		\bi
-			\item Where $f_1, f_2,\dots, f_l$ are pairwise distinct monic 
-			irreducible polynomials in $\F_q[X]$ and $e_1,\dots,e_l$ are positive integers.
-		\ei
+	\item Then, $\exists P_{k}(x) \in \F_2[x]$ as a common factor of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$, such that:
+	\bi
+		\item $P_{k}(x)$ is a degree-$k$ primitive polynomial in $\F_2[x]$ with $P_k(\al)=0$
 	\ei
-	\vspace{0.1in}
-	% \item We employ existing implementation of UPF from computer algebra tool {\it SINGULAR} 
 \ei
 \end{frame}
 
-\begin{frame}{\large MFR Notations: Finding Primitive Polynomial $P_k(X)$}
-\bi
-	\item Obtain UPFs of $P_n(X^{\lambda})$ and $P_m(X^{\mu})$
-	\bi
-		\item Coefficients will be in $\Ftwo$ and degrees will be less than $\lambda$ and $\mu$, respectively.
-		\bi
-			\item $P_n(X^{\lambda})=P_{n1}^{a1}\cdot P_{n2}^{a2}\cdots P_{nl}^{al}$, and 
-			\item $P_m(X^{\mu}) = P_{m1}^{b1}\cdot P_{m2}^{b2}\cdots P_{mg}^{bg}$
-		\ei
-	\ei
-	\vspace{0.1in}
-	\item Conjecture: $\exists P_{ni}(X) \in \{P_{n1}, P_{n2},\dots ,P_{nl}\}$ and $\exists P_{mj}(X) \in \{P_{m1}, P_{m2},\dots ,P_{mg}\}$, such that:
-	\bi
-		\item $P_k(X) = P_{ni}(X)=P_{mj}(X)$,
-		\item $P_{k}(X)$ is a degree-$k$ primitive polynomial in $\F_2[X]$ such that $P_k(\al)=0$
-	\ei
-\ei
+\begin{frame}{\large Application: Word-level representation}
+\begin{figure}[hbt]
+\centering
+    \includegraphics[scale = 0.24]{mas_3_ddc_mfr_b.pdf}
+    \caption*{
+    Patch function modeled as a 2-bit-vector word ($m$=2) $W=\{r_3,rr_3\} = r_3+\be\cdot rr_3$, ($w_0=r_3, w_1=rr_3$).}
+    \label{fig:mas_bug_Wb}
+\end{figure}
 \end{frame}
 
-
-\begin{frame}{\large MFR Application: Word-level Formulation}
+\begin{frame}{\large Application: Computing $P_k(x)$}
 \bi
-	\item Update ring properties 
-	\bi
-		\item $R=\F_q[x_1,\dots,x_d,Z,A,W]$
-		\item Modify RTTO $>$ to place the target $W$ before the lowest indexed target $e_0$
-		\bi
-			\item $\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\{f_0>e_2>e_3\}>\{{\bf{W}}>e_0>e_1>d_5>d_6>d_7>d_8\}>
-				\{d_0>d_1>d_2>d_3>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}.$
-		\ei
-	\ei
-	\vspace{0.1in}
-	\item Update polynomial set $F$ to $F'$:
-	\bi
-		\item Delete polynomials for $w_i$'s
-		\item Delete polynomials in the transitive fan-in of $w_i$'s only
-		\item Transitive fan-outs of $w_i$'s need to be replaced with their equivalent 
-		word-level representations in terms of $W$
-		\item Add $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
-	\ei
+\item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = al^9,~~\be=\alpha^{21}$
 
-\ei
-\end{frame}
-
-\begin{frame}{\large MFR Application: Computing $P_k(X)$}
-\bi
+\vspace{0.1in}
 	\item Composite field: $k=LCM(2,3)=6$
 	\vspace{0.1in}
 	\bi
-		\item $UPF(P_3(X^9)) = \{{\bf X^6+X^4+X^3+X+1},X^6+X^4+X^2+X+1,{\bf X^6+X^5+1}, X^6+X^5+X^2+X+1\}$
+		\item $ UPF(P_3(x^9)) = (x^9)^3+(x^9)+1 =
+  (x^6+x^5+x^2+x+1)(x^6+x^5+1)(x^6+x^4+x^3+x+1)(x^6+x^4+x^2+x+1)(x^3+x+1);$
 		\vspace{0.1in}
-		\item $UPF(P_2(X^{21})) = \{{\bf X^6+X^4+X^3+X+1}, {\bf X^6+X^5+1}, X^6+X^3+1, X^6+X^5+X^2+X+1, X^6+X^5+X^3+X^2+1, X^6+X+1, X^6+X^5+X^4+X+1 \}$
+		\item $UPF(P_2(x^{21})) = (x^{21})^2+(x^{21})+1 =
+  (x^6+x^5+x^2+x+1)(x^6+x^5+1)(x^6+x^4+x^3+x+1)(x^6+x^5+x^3+x^2+1)
+  (x^6+x^5+x^4+x+1)(x^6+x+1)(x^6+x^3+1);$
 		\vspace{0.1in}
-		\item We will pick $P_6(X)=X^6+X^4+X^3+X+1$ as the primitive polynomial to setup the unified framework.
+		\item We choose $P_6(x)=x^6+x^5+1$ as the required $P_k(x)$.
 	\ei
 \ei
 \end{frame}
 
-\begin{frame}{\large MFR Notations: Incorrect Primitive Polynomial}
+\begin{frame}{\large MFR Notation: Incorrect $P_k(x)$}
 \bi
-	\item Note that if we incorrectly choose $P_k(X)=X^6+X^3+1$
+	\item Note that if we incorrectly choose $P_k(x)=x^6+x^3+1$
 	\item For its root $\al$, we have
-	\begin{center}
-		$\al^6+\al^3+1=0$\\
-		$(\al^3)(\al^6+\al^3+1)=0$ (multilying by $\al^3$)\\
-		$\al^9+\al^6+\al^3=0$\\
-		$\ga+1=0$\label{ga_val}
-	\end{center}
-	\item But we have $\ga=\al^9$
-	\item Selecting arbitrary $P_k(X)$ leads to erroneous results
+	\begin{align*}
+\alpha^6 + \alpha^3 + 1 &= 0\\
+ (\alpha^3)(\alpha^6 +\alpha^3 + 1) &= 0 ~(\text{multiply by}~\alpha^3)\\
+\alpha^9 + \alpha^6 + \alpha^3 &= 0 \\
+ \gamma + 1 &= 0
+\stepcounter{equation}\tag{\theequation}\label{ll} 
+\end{align*}
+	\item However, $\ga \neq 1$, as $\ga$ is a primitive element of $\Fkn$
+	\item Selecting arbitrary $P_k(x)$ leads to erroneous results
+\ei
+\end{frame}
+
+
+\begin{frame}{\large MFR Notation: Word-level Formulation steps}
+\bi
+	\item Modify field to $\Fkk$ and compute $P_k(x)$
+	\item Update ring by adding word-level target representation $W$ 
+	\vspace{0.1in}
+	\item Construct a polynomial set $F'$ as follows:
+	\bi
+		\item Start with $F' = F$
+		\item Remove polynomials with $w_i$'s as leading terms
+		\item Substitute for $w_i$'s the respective word-level polynomials
+		\item Add $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
+	\ei
+
 \ei
 \end{frame}
 
@@ -274,13 +283,13 @@
 		\vspace{0.1in}
 		\item Performing the reductions for all $1 \leq i \leq 2^m$: 
 		\bi
-			\item $f\xrightarrow{F'_i, F_{0}^{PI}}_+r_i $
+			\item $f\xrightarrow{F'_i, F_0}_+r_i $
 		\ei
 		\item Let $V_{\Fq}(r_i)$ denote the varieties of the respective $r_i$'s
 		\vspace{0.1in}
-		\item Multi-fix rectification exists at target $W$: \\ 
+		\item Multi-fix rectification exists at target $W$: \\ \\ 
 				\centering
-				{\bf if and only if} $\bigcup\limits_{i=1}^{2^m}V_{\Fq}(r_i) = \Fq^{|X_{PI}|} = V(J_0^{PI})$
+				{\bf if and only if} $\bigcup\limits_{i=1}^{2^m}V_{\Fq}(r_i) = \Fq^{|X_{PI}|} = V(J_0)$
 	\ei
 \ei
 \end{frame}
@@ -296,17 +305,28 @@
 	\ei
 	\vspace{0.1in}
 	\item Reducing the specification $f: Z+A\cdot B$ modulo these ideals, we get:
-	\bi
-		\item $r_1 = f \xrightarrow[]{F'_1,F_{0}^{PI}}_+{a_1b_2\ga^3+a_2b_1\ga^3+\ga^4a_2b_2}$
-		\item $r_2 = f \xrightarrow[]{F'_2,F_{0}^{PI}}_+{a_1b_2\ga^3+a_2b_1\ga^3+\ga^4a_2b_2+\ga^3}$
-		\item $r_3 = f \xrightarrow[]{F'_3,F_{0}^{PI}}_+{a_1b_2\ga^3+a_2b_1\ga^3+\ga^4a_2b_2+\ga^4}$
-		\item $r_4 = f \xrightarrow[]{F'_4,F_{0}^{PI}}_+{a_1b_2\ga^3+a_2b_1\ga^3+\ga^4a_2b_2+\ga^6}$
-	\ei
-	\item Computing $GB(r_1\cdot r_2 \cdot r_3 \cdot r_4, F_{0}^{PI})=F_{0}^{PI}$
-	\item Target $W$ with nets $e_0$ and $d_5$ admits MFR
+\bi
+\item $rem_1 = f \xrightarrow[]{F'_1\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
+\item $rem_2 = f \xrightarrow[]{F'_2\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
+\item $rem_3 = f \xrightarrow[]{F'_3\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)}$
+\item $rem_4 = f \xrightarrow[]{F'_4\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
+\ei
+	\item Compute $GB(r_1\cdot r_2 \cdot r_3 \cdot r_4, F_0)=F_0$
+	\item Target $W$ with nets $r_3$ and $rr_3$ admits MFR
 \ei
 \end{frame}
 
+\begin{frame}{\large Future work: Rectification function}
+
+\bi
+\item A polynomial which can be computed to rectify the circuit
+	\bi
+		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
+		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
+	\ei
+\ei
+
+\end{frame}
 
 % \begin{frame}{\large MFR Pseudocode}
 % \begin{figure}[hbt]

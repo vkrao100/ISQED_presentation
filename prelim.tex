@@ -1,7 +1,7 @@
 %!TEX root = UG_PhD_Defense.tex
 \begin{frame}{\large Preliminaries: Finite field basics}
 \bi
-	\item Fields - set of elements over which operations $(+,\cdot,/)$ can be performed (non-zero elements)
+	\item Fields - set of elements over which operations $(+,\cdot,/)$ can be performed 
 	\bi
 		\item Ex. $\R,\Q,\C$
 	\ei
@@ -11,22 +11,49 @@
 		\item Ex. $\F_q$, where $q=p^n,~p~=~prime,~n \in \Z_{\geq 1}$ 
 		\bi
 		\item When $n=1$, $\F_p = \Z_p \pmod{p}$
+		\item With $p=2$, $\F_2 = \B = \{0,1\}$
 		\ei
-		\item Every digital circuit represents a function over Galois fields
+		\item On circuits, $p=2$, $n=$ data-operand width
 	\ei
 	\vspace{0.1in}
-	\item We are interested in fields of type $\Fkn$
-	\bi
-		\item Binary Galois extension fields with characteristic $2$ ($p$)
-		\bi
-			\item Bit-vector of size $n$ represents $2^n$ distinct elements
-		\ei
-		\item Finite field properties allow elegant application of algebraic geometry techniques
+	\item Hardware cryptography extensively based on $\Fkn$ (we use $\Fkn$)
+    % \bi
+		% \item $\F_2 \subset \Fkn$, $n>1$
+	% \item We are interested in fields of type $\Fkn$
+	% \bi
+	% 	\item Binary Galois extension fields with characteristic $2$ ($p$)
+	% 	\bi
+	% 		\item 
+	% 		\item Bit-vector of size $n$ represents $2^n$ distinct elements
+	% 	\ei
+	% 	\item Finite field properties allow elegant application of algebraic geometry techniques
 		% \bi
 		% 	\item Practical applications to hardware design, debug, verification, and rectification
 		% \ei
-	\ei
+	% \ei
 \ei
+\end{frame}
+
+\begin{frame}{\large Preliminaries: Modeling circuit polynomials over $\Fkn$}
+\bi
+	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkn)$. Over $\F_2$, $-1=+1\pmod{2}$
+\ei
+	\begin{align*}
+		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
+		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
+		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
+		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
+	\end{align*}
+
+\bi
+	\item Word-level polynomials [$\ga$ = primitive element of $\Fkn$]
+\ei
+\begin{equation*}
+\begin{split}
+ Output:  Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
+ Input:  A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1}
+\end{split}
+\end{equation*}
 \end{frame}
 
 \begin{frame}{\large Problem Statement and Objective}
@@ -49,7 +76,7 @@
 	\ei
 	 % , s.t. $P_n(\ga) = 0$
 	\vspace{0.1in}
-	\item A set of targets $m$ from $C$
+	\item A set of $m$ targets from $C$ (modeled over $\Fkm$)
 	\vspace{0.1in}
 	\vspace{0.1in}
 	\item Check if $C$ is rectifiable at these $m$ targets 
@@ -58,27 +85,7 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large Circuit Modeling}
-\bi
-	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkn)$
-\ei
-	\begin{align*}
-		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
-		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
-		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
-		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
-	\end{align*}
 
-\bi
-	\item Bit-level to word-level correspondence
-\ei
-\begin{equation*}
-\begin{split}
- Output:  Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
- Input:  A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1}
-\end{split}
-\end{equation*}
-\end{frame}
 
 \begin{frame}{\large Algebraic Geometry: Ideals}
 \bi
@@ -97,11 +104,13 @@
 	\item $J = \langle F \rangle = \langle f_1, \dots, f_s \rangle \subseteq R$
 	\bi
 		\item $\{h_1f_1 + \cdots + h_sf_s:~h_i \in R\}$
+		\item Polynomials $f_1, \dots, f_s$: {\it basis} or {\it generators} of $J$
 	\ei
 	\vspace{0.1in}
 	\item Vanishing Ideal: $J_0 = \langle F_0 \rangle =  \langle x_1^2+x_1,\dots,x_d^2+x_d, Z^{2^n}+Z\rangle$
-	\vspace{0.1in}
-	\item Polynomials $f_1, \dots, f_s$: {\it basis} or {\it generators} of $J$
+	\bi
+		\item Restrict solutions to $x_i$ in $\F_2$, and solutions to $Z$ in $\Fkn$
+	\ei
 \ei
 \end{frame}
 
@@ -132,19 +141,21 @@ f_s(\bm{a}) = 0
 	\item An ideal $J = \langle f_1,\dots,f_s\rangle \subseteq R$ can have many generators. 
 	\bi
 		\item $J = \langle p_1,\dots,p_m\rangle = \dots = \langle g_1,\dots,g_t\rangle$
+		\item \Grobner Basis (GB) is one such set with special properties
+		% \bi
+		% 	\item Presence or absence of solutions (varieties)
+		% 	% \item Determine dimension of varieties.
+		% 	\item Ideal membership of a polynomial
+		% \ei
 	\ei
 	% \bi
 	% 	\item Same ideal different sets of generators
 	% \ei
+	% \vspace{0.1in}
+	
 	\vspace{0.1in}
-	\item \Grobner Basis (GB) one such set with special properties
-	\bi
-		\item Determine presence or absence of solutions (varieties)
-		% \item Determine dimension of varieties.
-		\item Determine ideal membership of a polynomial
-	\ei
-	\vspace{0.1in}
-	\item Let $G = \{g_1,\dots,g_t \}$, and $J =  \langle f_1,\dots,f_s\rangle = \langle g_1,\dots,g_t\rangle$
+	\item Let $J =  \langle f_1,\dots,f_s\rangle = \langle g_1,\dots,g_t\rangle$
+	and $G = GB(J) = \{g_1,\dots,g_t \}$.
 	\bi
 	\item $G$ is a \Grobner basis of $J \iff \forall f \in J, f \xrightarrow[]{g_1,\dots,g_t}_+ 0$ 
 	% \ei
@@ -157,7 +168,7 @@ f_s(\bm{a}) = 0
 \ei
 \begin{figure}
 \centering
-\includegraphics[scale=0.35]{GB.png}
+\includegraphics[scale=0.39]{GB.png}
 \end{figure}
 \end{frame}
 

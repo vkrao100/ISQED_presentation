@@ -24,14 +24,14 @@
 
 \begin{frame}{\large Application: Single-Fix Rectification}
 \bi
-	\item Circuit designed over $\Fkn$ using irreducible polynomial $P_n(x) = P_2(x) = x^2+x+1$ with $P_2(\ga)=0$
+	\item Circuit designed over $\Fkn = \F_{2^2} (n=2)$ using irreducible polynomial $P_n(x) = P_2(x) = x^2+x+1$ with $P_2(\ga)=0$
 \ei
 \begin{figure}[hbt]
     \begin{center}
     \includegraphics[scale = 0.64]{mas_red_bug-eps-converted-to.pdf}
     \end{center}
 %    \vspace{-4ex}
-    \caption*{\small A 2-bit buggy modulo
+    \caption*{\small A 2-bit faulty modulo
       multiplier implementation. 
     %   with the bug at
     % net $e_3$. A correct implementation will have an AND gate at $e_3$,
@@ -63,25 +63,25 @@ b_0^2-b_0, b_1^2-b_1\}$
 \ei
 \end{frame}
 
-\begin{frame}{\large Application: Single-Fix Rectification}
-\bi
-	\item Circuit designed over $\Fkn$ using irreducible polynomial $P_n(x) = P_2(x) = x^2+x+1$ with $P_2(\ga)=0$
-\ei
-\begin{figure}[hbt]
-    \begin{center}
-    \includegraphics[scale = 0.64]{mas_red_bug-eps-converted-to.pdf}
-    \end{center}
-%    \vspace{-4ex}
-    \caption*{\small A 2-bit buggy modulo
-      multiplier implementation. 
-    %   with the bug at
-    % net $e_3$. A correct implementation will have an AND gate at $e_3$,
-    % which has been replaced by an XOR gate.
-    }
-    \label{fig:mas_both}
-\end{figure}
+% \begin{frame}{\large Application: Single-Fix Rectification}
+% \bi
+% 	\item Circuit designed over $\Fkn$ using irreducible polynomial $P_n(x) = P_2(x) = x^2+x+1$ with $P_2(\ga)=0$
+% \ei
+% \begin{figure}[hbt]
+%     \begin{center}
+%     \includegraphics[scale = 0.64]{mas_red_bug-eps-converted-to.pdf}
+%     \end{center}
+% %    \vspace{-4ex}
+%     \caption*{\small A 2-bit buggy modulo
+%       multiplier implementation. 
+%     %   with the bug at
+%     % net $e_3$. A correct implementation will have an AND gate at $e_3$,
+%     % which has been replaced by an XOR gate.
+%     }
+%     \label{fig:mas_both}
+% \end{figure}
 
-\end{frame}
+% \end{frame}
 
 % \begin{frame}{\large SFR Contribution: Identifying Target Nets}
 % %We are investigating; and we have some ideas; I will tell you what it is
@@ -112,6 +112,7 @@ b_0^2-b_0, b_1^2-b_1\}$
 
 % \end{frame}
 
+
 \begin{frame}{\large SFR Application: Rectification Check}
 %ATPG V() V() = empty
 %we have an algebraic proof which is there in the proposal
@@ -119,24 +120,26 @@ b_0^2-b_0, b_1^2-b_1\}$
 	% \item Single-fix rectification exists at net $x_i$, {\it iff} $V_{\Fq}(r_L) \cup V_{\Fq}(r_H) =
  % 		\Fq^{|X_{PI}|} = V(J_0^{PI}) $
 	\vspace{0.1in}
-	Modeling a patch $\Fkm = \F_{2^1}$ over a circuit 
+	% Single-fix patch modeled over $\Fkm = \F_{2} (m=1)$ within a circuit 
+	% modeled over $\Fkn = \F_{2^2}$
 	\begin{enumerate}
-		\item Rectification check at net $e_3$:
+		\item Rectification check at net $e_3$: $W = \{e_3\}$
 		\bi
-			\item $J_L = \langle F_L\rangle$, where $F_L=\{f_1,\dots, f_{10}=e_3+1,\dots, f_{16}\}$
-			\item $J_H = \langle F_H\rangle$, where $F_H = \{f_1,\dots, f_{10}=e_3,\dots, f_{16}\}$
+			\item $J_1 = \langle F_1\rangle$, where $F_1=\{f_1,\dots, f_{10}=e_3+0,\dots, f_{16}\}$
+			\item $J_2 = \langle F_2\rangle$, where $F_2 = \{f_1,\dots, f_{10}=e_3+1,\dots, f_{16}\}$
 		\ei
 		\vspace{0.1in}
-		\item Compute $r_L$ and $r_H$:
+		\item Compute $r_1$ and $r_2$:
 		\bi
-			\item $r_L = f \xrightarrow[]{F_L, F_0}_+{(\ga+1)a_1b_1b_0+(\ga+1)a_1b_1}$
-			\item $r_H = f \xrightarrow[]{F_H,F_0}_+{(\ga+1)a_1b_1b_0+(\ga)a_1b_0}$
+			\item $r_1 = f \xrightarrow[]{J_1, J_0}_+{(\ga+1)a_1b_1b_0+(\ga+1)a_1b_1}$
+			\item $r_2 = f \xrightarrow[]{J_2,J_0}_+{(\ga+1)a_1b_1b_0+(\ga)a_1b_0}$
 		\ei
 		\vspace{0.1in}
-		\item Single-fix rectification possible iff $G = GB(rL\cdot rH, F_0)=F_0$
+		% \item Single-fix rectification possible iff $G = GB(r1\cdot r2, F_0)=F_0$
+		\item Single-fix rectification possible iff $V(r_1) \cup V(r_2) = \F_{2^3}^{|X_{PI}|} = V(J_0)$
 		\bi
-			\item $G = \{a_0^2-a_0, a_1^2-a_1,b_0^2-b_0,b_1^2-b_1\}$
-			\item Target $e_3$ admits SFR
+			\item Compute $G = GB(r1\cdot r2, J_0)$ and check if $G=J_0$
+			\item In this example, target $e_3$ admits SFR
 		\ei
 	\end{enumerate}
 % \ei
@@ -165,15 +168,14 @@ b_0^2-b_0, b_1^2-b_1\}$
 % \ei
 % \end{frame}
 
-\begin{frame}{\large Unified framework and Field Containment}
+\begin{frame}{\large Unified framework motivation}
 \bi
-	\item Why does it work in Single-fix?
+	\item Single-fix is a special case of MFR with $m=1$
 	\bi
-		\item Special case of Multi-fix with $m=1$
 		\item Rectification patch modeled over $\Fkm = \F_{2^1} = \F_2$
-		\item Circuit modeled over $\Fkn$, can always work over $\Fkn$
+		\item Circuit modeled over $\Fkn$ 
 		\bi
-			\item $\F_2 \subset \F_{2^n}, \forall n \in \Z_{>1}$
+		    \item Since $m=1$ divides $n$, $\F_2 \subset \F_{2^n}$, $\forall n \in \Z_{>1}$
 		\ei
 	\ei
 	\vspace{0.1in}
