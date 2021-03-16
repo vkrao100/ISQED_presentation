@@ -1,0 +1,53 @@
+\begin{frame}{\large Sum, Product, and Quotient of Ideals}
+\begin{center}
+Given $J_1 = \langle f_1,\dots,f_s\rangle \in R$ and $J_2=\langle h_1,\dots,h_r\rangle \in R$
+\end{center}
+\bi 
+\item Sum of ideals:
+\bi
+	\item $J_1 + J_2 = \langle f_1,\dots,f_s, h_1\dots,h_r\rangle$
+\ei
+\item Product of ideals:
+\bi
+\item $J_1\cdot J_2 = \langle f_i\cdot h_j: 1\leq i\leq s, 1\leq j\leq r\rangle$
+\ei
+
+\item Ideal quotient of $J_1$ by $J_2$:
+\bi
+\item $J_1:J_2 = \{f \in R \ |\ f\cdot h \in J_1, \forall h \in J_2\}$
+\ei
+
+\item Ideals and varieties are dual concepts
+\bi
+\item $V(J_1 + J_2) = V(J_1) \cap V(J_2)$
+\item $V(J_1\cdot J_2) = V(J_1) \cup V(J_2)$
+\item $V(J_1:J_2) = V(J_1)-V(J_2)$
+\ei
+% \item Moreover, if $J_1 \subseteq J_2$ then $V(J_1)\supseteq V(J_2)$
+\ei
+
+\end{frame}
+
+\begin{frame}{\large MFR Application: Word-level Formulation}
+\bi
+	\item Update ring properties 
+	\bi
+		\item $R=\F_q[x_1,\dots,x_d,Z,A,W]$
+		\item Modify RTTO $>$ to place the target $W$ before the lowest indexed target $e_0$
+		\bi
+			\item $\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\{f_0>e_2>e_3\}>\{{\bf{W}}>e_0>e_1>d_5>d_6>d_7>d_8\}>
+				\{d_0>d_1>d_2>d_3>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}.$
+		\ei
+	\ei
+	\vspace{0.1in}
+	\item Update polynomial set $F$ to $F'$:
+	\bi
+		\item Delete polynomials for $w_i$'s
+		\item Delete polynomials in the transitive fan-in of $w_i$'s only
+		\item Transitive fan-outs of $w_i$'s need to be replaced with their equivalent 
+		word-level representations in terms of $W$
+		\item Add $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
+	\ei
+
+\ei
+\end{frame}

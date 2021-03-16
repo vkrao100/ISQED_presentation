@@ -23,45 +23,129 @@
 % \end{frame}
 
 \begin{frame}{\large Application: Single-Fix Rectification}
+% \begin{columns}
+% 	\begin{column}
+		\begin{figure}[hbt]
+		\centering
+		\includegraphics[scale=0.26]{mas_3_ddc_mfr_a.pdf}
+		\caption*{A faulty implementation of a 3-bit modulo multiplier ($Z = A \cdot B~~mod~P_3(x)$)
+		% ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
+		}\label{fig:mas_bug_ca}
+		\end{figure}
+% 	\end{column}
+
+% 	\begin{column}
+% 	\bi
+% 	\item Impose RTTO $>$
+% 	\ei
+% 	\begin{small}
+% 		\begin{flalign*}
+% 		f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;\\
+% 		f_2:A + a_0 +\ga \cdot a_1 + \ga^2 \cdot a_2;\\
+% 		f_3:B + b_0 +\ga \cdot b_1 + \ga^2 \cdot b_2;\\
+% 		f_4:z_0 + d_0 + e_1;   \\             		
+% 		f_5:z_1 + f_0 + rr_0;   \\            		
+% 		\dots  \\
+% 		f_{22}:rr_1 + rr_3+rr_2; \\
+% 		f_{23}:r_1 + r_2+r_3;\\
+% 		\red{f_{26}:r_3 + r_4 + d_4;}\\
+% 		{\red f_{27}:rr_3 + rr_4 + b_2;}\\
+% 		\dots\\
+% 		f_{30}:rr_4 + a_2+b_2+a_2b_2;                             		
+% 		\end{flalign*}
+% 	\end{small}
+% 	\end{column}
+% \end{columns}
+\end{frame}
+
+\begin{frame}{\large Preliminaries: Term order}
 \bi
-	\item Circuit designed over $\Fkn = \F_{2^2} (n=2)$ using irreducible polynomial $P_n(x) = P_2(x) = x^2+x+1$ with $P_2(\ga)=0$
+	\item Reverse Topological Term Order (RTTO)
+	\bi
+		\item Exploit circuit structure to avoid expensive GB computation
+		\item Standard practice to order variables topologically from POs to PIs
+	\ei
+	\pause
+	\vspace{0.1in}
+	\item Impose RTTO $>$ on circuit $C$:
+	\begin{small}
+\begin{flalign*}
+f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;   &\quad f_{22}:rr_1 + rr_3+rr_2; \\
+f_2:A + a_0 +\ga \cdot a_1 + \ga^2 \cdot a_2;   &\quad f_{23}:r_1 + r_2+r_3;\\
+f_3:B + b_0 +\ga \cdot b_1 + \ga^2 \cdot b_2;   &\quad \red{f_{26}:r_3 + r_4 + d_4;}\\
+f_4:z_0 + d_0 + e_1;                &\quad {\red f_{27}:rr_3 + rr_4 + b_2;}\\
+f_5:z_1 + f_0 + rr_0;               &\quad \dots\\
+\dots                               &\quad f_{30}:rr_4 + a_2+b_2+a_2b_2;
+\end{flalign*}
+\end{small}
+\pause
+\vspace{-0.1in}
+\item $F = \{f_1,\dots,f_{30}\}$, $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z\}$. 
+\bi
+	\item Ideal $J+J_0=\langle F\cup F_0\rangle$ models $C$.
 \ei
-\begin{figure}[hbt]
-    \begin{center}
-    \includegraphics[scale = 0.64]{mas_red_bug-eps-converted-to.pdf}
-    \end{center}
-%    \vspace{-4ex}
-    \caption*{\small A 2-bit faulty modulo
-      multiplier implementation. 
-    %   with the bug at
-    % net $e_3$. A correct implementation will have an AND gate at $e_3$,
-    % which has been replaced by an XOR gate.
-    }
-    \label{fig:mas_both}
-\end{figure}
+\ei
 
 \end{frame}
 
-\begin{frame}{\large SFR Application: Verification}
+\begin{frame}{\large Application: Single-Fix Rectification}
 \bi
 	\item Denote polynomial $f: Z + A\cdot B$ as the design specification.
-	\item Impose RTTO $>$
-\ei
-\[ \begin{array}{lll}%									   
-f_1:Z + z_0 +\ga \cdot z_1;&\quad  f_7:e_0 + s_1e_2; 	   &\quad f_{12}:s_1 + a_1b_1; \\
-f_2:A + a_0 +\ga \cdot a_1;&\quad  f_8:e_1 + s_2e_2; 	   &\quad f_{13}:s_2 + a_1b_0;  \\
-f_3:B + b_0 +\ga \cdot b_1;&\quad  f_9:e_2 + e_3 + s_4;    &\quad f_{14}:s_3 + a_0 + b_0 + a_0b_0; \\ 
-f_4:z_0 + s_0 + e_0;  	   &\quad  \alert{f_{10}:e_3 + b_0 + s_3;} &\quad f_{15}:s_4 + b_0 + 1;\\ 
-f_5:z_1 + e_0 + r_0;  	   &\quad  f_{11}:s_0 + a_0b_0;    &\quad f_{16}:s_5 + a_0b_1;  \\
-f_6:r_0 + e_1 + s_5;            						    
-\end{array}\]%
+	\vspace{0.1in}
+	\pause
+	\item Ideal $J+J_0=\langle F\cup F_0\rangle$ representing circuit $C$.
+	\vspace{0.1in}
+	% \pause
+	% \item $F = \{f_1,\dots,f_{30}\}$, $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z\}$. 
+%under RTTO $>$, $F\cup F_{0}$ constitutes a GB of
+	\vspace{0.1in}
+	\pause
+	\item Circuit designed over $\Fkn = \F_{2^3} (n=3)$ using 
+	$P_n(x) = P_3(x) = x^3+x+1$ with $P_3(\ga)=0$
 
-\bi
-	\item $F = \{f_1,\dots,f_{16}\}$, $F_0 = \{a_0^2-a_0, a_1^2-a_1,
-b_0^2-b_0, b_1^2-b_1\}$
-	\item Ideal Membership Test: $f\xrightarrow{F,F_0}_+\ga^1\cdot (a_0a_1b_1b_0+a_0a_1b_1+a_1b_1b_0+a_1b_0) + \ga^0\cdot (a_0a_1b_1b_0+a_0a_1b_1+a_1b_1b_0)$
+	\vspace{0.1in}
+\pause
+\item {\bf Is this circuit rectifiable at net $r_3$?}
 \ei
+
+
+% \begin{figure}[hbt]
+%     \begin{center}
+%     \includegraphics[scale = 0.64]{mas_red_bug-eps-converted-to.pdf}
+%     \end{center}
+% %    \vspace{-4ex}
+%     \caption*{\small A 2-bit faulty modulo
+%       multiplier implementation. 
+%     %   with the bug at
+%     % net $e_3$. A correct implementation will have an AND gate at $e_3$,
+%     % which has been replaced by an XOR gate.
+%     }
+%     \label{fig:mas_both}
+% \end{figure}
+
 \end{frame}
+
+% \begin{frame}{\large SFR Application: Verification}
+% \bi
+
+% 	\item Denote polynomial $f: Z + A\cdot B$ as the design specification.
+% 	\item Impose RTTO $>$
+% \ei
+% \[ \begin{array}{lll}%									   
+% f_1:Z + z_0 +\ga \cdot z_1;&\quad  f_7:e_0 + s_1e_2; 	   &\quad f_{12}:s_1 + a_1b_1; \\
+% f_2:A + a_0 +\ga \cdot a_1;&\quad  f_8:e_1 + s_2e_2; 	   &\quad f_{13}:s_2 + a_1b_0;  \\
+% f_3:B + b_0 +\ga \cdot b_1;&\quad  f_9:e_2 + e_3 + s_4;    &\quad f_{14}:s_3 + a_0 + b_0 + a_0b_0; \\ 
+% f_4:z_0 + s_0 + e_0;  	   &\quad  \alert{f_{10}:e_3 + b_0 + s_3;} &\quad f_{15}:s_4 + b_0 + 1;\\ 
+% f_5:z_1 + e_0 + r_0;  	   &\quad  f_{11}:s_0 + a_0b_0;    &\quad f_{16}:s_5 + a_0b_1;  \\
+% f_6:r_0 + e_1 + s_5;            						    
+% \end{array}\]%
+
+% \bi
+% 	\item $F = \{f_1,\dots,f_{16}\}$, $F_0 = \{a_0^2-a_0, a_1^2-a_1,
+% b_0^2-b_0, b_1^2-b_1\}$
+% 	\item Ideal Membership Test: $f\xrightarrow{F,F_0}_+\ga^1\cdot (a_0a_1b_1b_0+a_0a_1b_1+a_1b_1b_0+a_1b_0) + \ga^0\cdot (a_0a_1b_1b_0+a_0a_1b_1+a_1b_1b_0)$
+% \ei
+% \end{frame}
 
 % \begin{frame}{\large Application: Single-Fix Rectification}
 % \bi
@@ -112,6 +196,37 @@ b_0^2-b_0, b_1^2-b_1\}$
 
 % \end{frame}
 
+% \begin{frame}{\large SFR Application: Rectification Check}
+% %ATPG V() V() = empty
+% %we have an algebraic proof which is there in the proposal
+% % \bi
+% 	% \item Single-fix rectification exists at net $x_i$, {\it iff} $V_{\Fq}(r_L) \cup V_{\Fq}(r_H) =
+%  % 		\Fq^{|X_{PI}|} = V(J_0^{PI}) $
+% 	\vspace{0.1in}
+% 	% Single-fix patch modeled over $\Fkm = \F_{2} (m=1)$ within a circuit 
+% 	% modeled over $\Fkn = \F_{2^2}$
+% 	\begin{enumerate}
+% 		\item Rectification check at net $e_3$: %$W = \{e_3\}$
+% 		\bi
+% 			\item $J_1 = \langle F_1\rangle$, where $F_1=\{f_1,\dots, f_{10}=e_3+0,\dots, f_{16}\}$
+% 			\item $J_2 = \langle F_2\rangle$, where $F_2 = \{f_1,\dots, f_{10}=e_3+1,\dots, f_{16}\}$
+% 		\ei
+% 		\vspace{0.1in}
+% 		\item Compute $rem_1$ and $rem_2$:
+% 		\bi
+% 			\item $rem_1 = f \xrightarrow[]{J_1, J_0}_+{(\ga+1)a_1b_1b_0+(\ga+1)a_1b_1}$
+% 			\item $rem_2 = f \xrightarrow[]{J_2,J_0}_+{(\ga+1)a_1b_1b_0+(\ga)a_1b_0}$
+% 		\ei
+% 		\vspace{0.1in}
+% 		% \item Single-fix rectification possible iff $G = GB(r1\cdot r2, F_0)=F_0$
+% 		\item Single-fix rectification possible iff $V(rem_1) \cup V(rem_2) = \F_{2^2}^{|X_{PI}|} = V(J_0)$
+% 		\bi
+% 			% \item Compute $G = GB(rem_1\cdot rem_2, J_0)$ and check if $G=J_0$
+% 			\item In this example, target $e_3$ admits SFR
+% 		\ei
+% 	\end{enumerate}
+% % \ei
+% \end{frame}
 
 \begin{frame}{\large SFR Application: Rectification Check}
 %ATPG V() V() = empty
@@ -123,27 +238,33 @@ b_0^2-b_0, b_1^2-b_1\}$
 	% Single-fix patch modeled over $\Fkm = \F_{2} (m=1)$ within a circuit 
 	% modeled over $\Fkn = \F_{2^2}$
 	\begin{enumerate}
-		\item Rectification check at net $e_3$: $W = \{e_3\}$
+		\item Rectification check at net $r_3$: %$W = \{e_3\}$
 		\bi
-			\item $J_1 = \langle F_1\rangle$, where $F_1=\{f_1,\dots, f_{10}=e_3+0,\dots, f_{16}\}$
-			\item $J_2 = \langle F_2\rangle$, where $F_2 = \{f_1,\dots, f_{10}=e_3+1,\dots, f_{16}\}$
+			\item $J_1 = \langle F_1\rangle$, where $F_1=\{f_1,\dots, f_{26}=r_3+0,\dots, f_{30}\}$
+			\item $J_2 = \langle F_2\rangle$, where $F_2 = \{f_1,\dots, f_{26}=r_3+1,\dots, f_{30}\}$
 		\ei
 		\vspace{0.1in}
-		\item Compute $r_1$ and $r_2$:
+		\pause
+		\item Compute $rem_1$ and $rem_2$:
 		\bi
-			\item $r_1 = f \xrightarrow[]{J_1, J_0}_+{(\ga+1)a_1b_1b_0+(\ga+1)a_1b_1}$
-			\item $r_2 = f \xrightarrow[]{J_2,J_0}_+{(\ga+1)a_1b_1b_0+(\ga)a_1b_0}$
+			\item $rem_1 = f \xrightarrow[]{J_1, J_0}_+{(\ga+1)\cdot a_2b_1b_2+(\ga^2+\ga)\cdot a_2b_2}$
+			\item $rem_2 = f \xrightarrow[]{J_2,J_0}_+{(\ga+1)\cdot a_2b_1b_2+(\ga+1)\cdot a_2b_1+(\ga^2+\ga)\cdot a_2b_2}$
 		\ei
 		\vspace{0.1in}
+		\pause
 		% \item Single-fix rectification possible iff $G = GB(r1\cdot r2, F_0)=F_0$
-		\item Single-fix rectification possible iff $V(r_1) \cup V(r_2) = \F_{2^3}^{|X_{PI}|} = V(J_0)$
+		\item SFR possible {\bf iff} $V(rem_1) \cup V(rem_2) = \F_{2^3}^{|X_{PI}|} = V(J_0)$
 		\bi
-			\item Compute $G = GB(r1\cdot r2, J_0)$ and check if $G=J_0$
-			\item In this example, target $e_3$ admits SFR
+		\pause
+			\vspace{0.1in}
+			\item Compute $G = GB(rem_1\cdot rem_2, J_0)$ and check if $G=J_0$
+			\vspace{0.1in}
+			\item In this example, target $r_3$ doesn't admit SFR
 		\ei
 	\end{enumerate}
 % \ei
 \end{frame}
+
 
 % \begin{frame}{\large SFR Application: Computing Rectification Function}
 % \bi
@@ -170,25 +291,31 @@ b_0^2-b_0, b_1^2-b_1\}$
 
 \begin{frame}{\large Unified framework motivation}
 \bi
-	\item Single-fix is a special case of MFR with $m=1$
+	\item For Single-fix, $m=1$
 	\bi
 		\item Rectification patch modeled over $\Fkm = \F_{2^1} = \F_2$
 		\item Circuit modeled over $\Fkn$ 
+		\pause 
 		\bi
-		    \item Since $m=1$ divides $n$, $\F_2 \subset \F_{2^n}$, $\forall n \in \Z_{>1}$
+		    \item $\forall n \in \Z_{>1}$, $1 \mid n$, $\F_2 \subset \F_{2^n}$, 
 		\ei
 	\ei
+	\pause
 	\vspace{0.1in}
 	\item For Multi-fix, since $m > 1$, $\Fkm$ might not be contained in $\Fkn$
 	\bi
-		\item Ex. $\F_{2^2}$ is not contained in $\F_{2^3}$, $m=2,n=3$
+		\pause
+		\item Ex. For $m=2,n=3$, $2 \nmid 3$, $\F_{2^2} \not\subset \F_{2^3}$
 	\ei  
 	\vspace{0.1in}
-	\item Need a higher composite field $\Fkk$ such that 
+	\pause
+	\item Composite field $\Fkk$ 
 	\bi
 		\item $\Fkm \subset \Fkk$ and $\Fkn \subset \Fkk$
+	\pause
 	\item What are the mathematical challenges?
-	\item What primitive polynomial $P_K(x)$ should be used for constructing $\Fkk$
+	\pause
+	\item What $P_K(x)$ should be used for constructing $\Fkk$
 	\ei
 \ei
 \end{frame}

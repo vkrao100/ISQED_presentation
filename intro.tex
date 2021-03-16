@@ -3,15 +3,17 @@
 % Overview of the problems addressed and their solutions
 \bi
 	\item Problem Description
-	\item Motivation and Application
+	% \item Motivation and Application
 	\item Preliminaries
+	\item Problem Statement and Objective
+	\item Single-fix Application
 	\item Multi-Fix setup
 	\bi
-		\item Mathematical challenges
+		\item Mathematical Challenges
 	\ei
-	\item Rectifiability check
-	\item Experimental results
-	\item Conclusion and Future work
+	\item Rectifiability Check
+	\item Experimental Results
+	\item Summary and Future work
 	% \bi
 	% 	\item Multi-error logic rectification
 	% 	\item Approximate Computing
@@ -33,19 +35,19 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large Problem Description: Multi-error logic rectification}
+\begin{frame}{\large Problem Description:Rectification}
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[scale=0.26]{mas_3_ddc_mfr_a.pdf}
-\caption*{A faulty implementation of a 3-bit modulo multiplier
+\caption*{A faulty implementation of a 3-bit modulo multiplier ($Z = A \cdot B~~mod~P(x)$)
 % ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
 }\label{fig:mas_bug_Wa}
 \end{figure}
 \end{frame}
 
 
-\begin{frame}{\large Problem Description}
+\begin{frame}{\large Problem Description: Rectification}
 \bi 
 	% \item Identify rectification target nets
 	% \bi
@@ -54,16 +56,19 @@
 	% \ei
 	\item Agnostic to the fault model, check for rectification at particular targets
 	\bi
+	\pause
 		\item Single-fix Rectification (SFR)
 		\bi
 			\item Correct circuit by changing function at a single net
 		\ei
 	\ei
+	\pause
 	\vspace{0.1in}
 	\vspace{0.1in}
 	\vspace{0.1in}
 	\item In a general setting, SFR might not be desired or may not exist
 	\bi
+	\pause
 	\item Multi-fix Rectification (MFR)
 	\bi
 		\item Correct circuit by changing functions at multiple nets
