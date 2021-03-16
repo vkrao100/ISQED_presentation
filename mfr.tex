@@ -221,7 +221,7 @@
 \begin{frame}{\large Application: Computing $P_k(x)$}
 \bi
 \item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = \al^9,~~\be=\alpha^{21}$
-
+\pause
 \vspace{0.1in}
 	\item Composite field: $k=LCM(2,3)=6$
 	\vspace{0.1in}
@@ -289,11 +289,12 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large MFR Notation: Word-level Formulation steps}
+\begin{frame}{\large MFR Notation: MFR setup steps}
 \begin{enumerate}
 	\item Setup a new ring $R' = \Fkk[x_1,\dots,x_d,Z,A,W]$ 
-	\pause
-	\item $\Fkk$ is constructed using $P_k(x)$
+	\bi
+		\item $\Fkk$ is constructed using $P_k(x)$
+	\ei
 	\vspace{0.1in}
 	\pause
 	\item Construct a polynomial set $F'$ as follows:
@@ -313,8 +314,12 @@
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{\large Preliminaries: Circuit Polynomials}
+\begin{frame}{\large Circuit Polynomials and Setup}
 \bi
+	\item Ring $R = \Fkn[x_1,\dots,x_d,Z,A]$ 
+	\bi
+		\item $\Fkn$ is constructed using $P_n(x)$
+	\ei
 	\item Impose RTTO $>$ on circuit $C$:
 	\begin{small}
 	\begin{flalign*}
@@ -326,7 +331,6 @@
 	\dots                               &\quad f_{30}:rr_4 + a_2+b_2+a_2b_2;
 	\end{flalign*}
 	\end{small}
-	\pause
 	\vspace{-0.1in}
 	\item $F = \{f_1,\dots,f_{30}\}$, $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z\}$. 
 	\bi
@@ -338,7 +342,7 @@
 
 \begin{frame}{\large MFR Application: Word-level Formulation }
 \bi
-	\item 2-bit rectification patch over the 3-bit circuit can be performed over the field $\F_{2^6}$
+	\item ring $R' = \F_{2^6}[x_1,\dots,x_d,Z,A,W]$ 
 	\bi
 		\item $\F_{2^6} = \F_2[x]$ (mod $P_6(x)$)
 		\item $P_6(x) = x^6+x^5+1$
@@ -365,12 +369,13 @@
 	\vspace{0.1in}
 	\bi
 		\item Construct the following ideals:
-		\begin{align*}
+		\begin{flalign*}
+		\centering
 			J'_l = \langle F'_l\rangle =\langle f_1,\dots,f'_W=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
-			\text{ where $F'_l$ is obtained from $F'$ by replacing } 
+			\text{ where $F'_l$ is obtained from $F'$ by replacing } \\
 			f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,
   			\text{ and } (\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
-		\end{align*}
+		\end{flalign*}
 		\vspace{0.1in}
 		\item Performing the reductions for all $1 \leq l \leq 2^m$: 
 		\bi
