@@ -294,6 +294,7 @@
 	\item Setup a new ring $R' = \Fkk[x_1,\dots,x_d,Z,A,W]$ 
 	\bi
 		\item $\Fkk$ is constructed using $P_k(x)$
+		\item Modify RTTO $>$ to place the target $W$ before the lowest indexed target $w_i$
 	\ei
 	\vspace{0.1in}
 	\pause
@@ -320,7 +321,7 @@
 	\bi
 		\item $\Fkn$ is constructed using $P_n(x)$
 	\ei
-	\item Impose RTTO $>$ on circuit $C$:
+	\item Circuit polynomials under RTTO $>$:
 	\begin{small}
 	\begin{flalign*}
 	f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;   &\quad f_{22}:rr_1 + rr_3+rr_2; \\
@@ -344,11 +345,16 @@
 \bi
 	\item ring $R' = \F_{2^6}[x_1,\dots,x_d,Z,A,W]$ 
 	\bi
-		\item $\F_{2^6} = \F_2[x]$ (mod $P_6(x)$)
-		\item $P_6(x) = x^6+x^5+1$
+		\item $\F_{2^6} = \F_2[x]$ (mod $P_6(x)$), $P_6(x) = x^6+x^5+1$
+		\pause 
+		\vspace{0.1in}
+		\item WRTO $>$: {\small 
+$\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\cdots>\{d_1>d_2>d_3>r_0>d_5>rr_1\}>
+\{r_1\}>{\bf \{W\}}>\{{\bf rr_3}>rr_2\}>\{r_2>{\bf r_3}>rr_4\}>\{r_4>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}$}
 
 	\ei
 	\vspace{0.1in}
+	\pause
 	\item Update polynomial set $F$ to $F'$ as:
 	\begin{align*}
 		&rr_3= W^2+W,~~r_3 = \be W^2 +\be^2W \\
@@ -369,20 +375,20 @@
 	\vspace{0.1in}
 	\bi
 		\item Construct the following ideals:
-		\begin{flalign*}
-		\centering
-			J'_l = \langle F'_l\rangle =\langle f_1,\dots,f'_W=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
-			\text{ where $F'_l$ is obtained from $F'$ by replacing } \\
-			f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,
-  			\text{ and } (\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
-		\end{flalign*}
-		\vspace{0.1in}
-		\item Performing the reductions for all $1 \leq l \leq 2^m$: 
+		\begin{align*}
+			J_l' = \langle F_l'\rangle =\langle f_1,\dots,f_W'=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
+			% \text{ where $F_l'$ is obtained from $F'$ by replacing } \\
+			% f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,\text{ and } \\
+  			Where~(\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
+		\end{align*}
+		\pause
+		\item Perform the reductions: 
 		\bi
-			\item $f\xrightarrow{F'_l, F_0}_+rem_l $
+			\item $f\xrightarrow{F'_l, F_0}_+rem_l $, $\forall 1 \leq l \leq 2^m$
 		\ei
 		\item Let $V_{\Fq}(rem_l)$ denote the varieties of the respective $rem_l$'s
 		\vspace{0.1in}
+		\pause
 		\item Multi-fix rectification exists at target $W$: \\  
 				\centering
 				{\bf if and only if} $\bigcup\limits_{l=1}^{2^m}V_{\Fq}(rem_l) = \Fq^{|X_{PI}|} = V(J_0)$
@@ -400,29 +406,30 @@
 		\item {\small$J_4 = \langle F'_4\rangle$, where $F'_4[f_w]=W+\delta(4)=W+\be^2$}
 	\ei
 	\vspace{0.1in}
+	\pause
 	\item Reducing the specification $f: Z+A\cdot B$ modulo these ideals, we get:
 \bi
 \item $rem_1 = f \xrightarrow[]{F'_1\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
 \item $rem_2 = f \xrightarrow[]{F'_2\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
 \item $rem_3 = f \xrightarrow[]{F'_3\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)}$
 \item $rem_4 = f \xrightarrow[]{F'_4\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
-\ei
+\ei \pause
 	\item Compute $GB(r_1\cdot r_2 \cdot r_3 \cdot r_4, F_0)=F_0$
 	\item Target $W$ with nets $r_3$ and $rr_3$ admits MFR
 \ei
 \end{frame}
 
-\begin{frame}{\large Future work: Rectification function}
+% \begin{frame}{\large Future work: Rectification function}
 
-\bi
-\item A polynomial which can be computed to rectify the circuit
-	\bi
-		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
-		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
-	\ei
-\ei
+% \bi
+% \item A polynomial which can be computed to rectify the circuit
+% 	\bi
+% 		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
+% 		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
+% 	\ei
+% \ei
 
-\end{frame}
+% \end{frame}
 
 % \begin{frame}{\large MFR Pseudocode}
 % \begin{figure}[hbt]

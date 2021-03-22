@@ -58,16 +58,14 @@
 % \end{columns}
 \end{frame}
 
-\begin{frame}{\large Preliminaries: Term order}
+\begin{frame}{\large Preliminaries: Term order and Polynomials}
 \bi
-	\item Reverse Topological Term Order (RTTO)
-	\bi
-		\item Exploit circuit structure to avoid expensive GB computation
-		\item Standard practice to order variables topologically from POs to PIs
-	\ei
+	\item RTTO $>$:
+{\small 
+$\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\cdots>\{d_1>d_2>d_3>r_0>d_5>rr_1\}>\{r_1>rr_3>rr_2\}>\{r_2>r_3>rr_4\}>\{r_4>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}$}
 	\pause
 	\vspace{0.1in}
-	\item Impose RTTO $>$ on circuit $C$:
+	\item Circuit polynomials under RTTO $>$:
 	\begin{small}
 \begin{flalign*}
 f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;   &\quad f_{22}:rr_1 + rr_3+rr_2; \\

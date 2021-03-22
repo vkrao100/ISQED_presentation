@@ -127,6 +127,30 @@
 
 % \end{frame}
 
+\begin{frame}{\large Implementation}
+\bi
+	\item Custom software: 
+	\bi
+		\pause
+		\vspace{0.1in}
+		\item PolyBori reduction procedure for remainder generation
+		\vspace{0.1in}
+		\pause
+		\item Singular to compute $P_k(x)$ and model composite field
+		\vspace{0.1in}
+		\pause
+		\item Custom high level finite field engine 
+		\pause
+		\bi
+		\item Bit-vector and coefficient computations
+		\item Decision procedure
+		\ei
+	\ei
+	\pause
+	\item Experiments performed on a 3.5GHz 
+	Intel(R) $\text{Core}^{\text{TM}}$ i7-4770K Quad-Core CPU with 32 GB RAM
+\ei
+\end{frame}
 
 \begin{frame}{\large Focus: Finite Field Arithmetic Circuits}
 \bi
@@ -155,25 +179,102 @@
 
 \begin{frame}{\large MFR Experiments: Mastrovito}
 
-{\small
+{\tiny
 \begin{table}[]
 \centering
-\caption{{\footnotesize Word-level multi-fix rectifiability check against word level specification. Time is in seconds; rows marked '*' indicates $m \nmid n$; Benchmark = Mastrovito architecture, $n$ = Datapath Size, \#Gates = No. of gates, K = $10^3$, $m$ = patch size, $k$ = encompassing composite field size, PF = time for polynomial factorization and computing minpoly for the composite field, RC = time for rectification check}}
+\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+$\textit{k}$ = composite field size (degree of $P_k(X)$), 
+AM = Maximum resident memory utilization in Mega Bytes,
+\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
+% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
+% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
+VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
+RC = Required time for MFR check, TE = Required time for total execution}}}
 \label{masusmontspec}
-\begin{tabular}{| c | c | c | c | c | c |} \hline
-{\textbf{n}}& {\textbf{\#Gates}} & {\textbf{m}} & {\textbf{k}} & {\textbf{PF}} & {\textbf{RC}} \\ \hline 
-12  & 0.45K & 2 & 12  & NA & 0.4\\ \hline
-16  & 0.8K & 2 & 16  & NA & 3.2 \\ \hline
-*16 & 0.8K & 3 & 48  & -- & --  \\ \hline
-*20 & 0.0 & 3 & 60  & -- & --   \\ \hline
-32  & 2.8K & 2 & 32  & NA & 184 \\ \hline
-48  & 6.4K & 3 & 48  & NA & --  \\ \hline
-64  & 11.2K & 2 & 64  & NA & -- \\ \hline
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
+& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.8  & 6  & 0.04 & 0.06  & 0.12  & 0.22 \\ \hline
+\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.8  & 8  & 0.13 & 0.12  & 0.4   & 0.65 \\ \hline
+\mb{64 } & \mb{3} & \mb{192 } & 160 & 11.2 & 5  & 0.57 & 0.45  & 227   & 228  \\ \hline
+\mb{96 } & \mb{2} & \mb{96  } & 240 & 24.5 & 5  & 1.47 & 0.26  & 0.83  & 2.56 \\ \hline
+\mb{128} & \mb{2} & \mb{128 } & 370 & 43.2 & 5  & 3.23 & 0.5   & 2.03  & 5.76 \\ \hline
+\mb{163} & \mb{5} & \mb{815 } & 550 & 69.8 & 6  & 6.04 & 3.36  & 11.9  & 21.3 \\ \hline
+\mb{233} & \mb{2} & \mb{466 } & 750 & 119  & 3  & 13   & 1.2   & 0.01  & 14.2 \\ \hline
+\mb{283} & \mb{2} & \mb{566 } & 1300& 190  & 2  & 38   & 4.2   & 0.1   & 42.3 \\ \hline
+\mb{409} & \mb{2} & \mb{818 } & 2400& 384  & 2  & 190  & 5     & 0.1   & 195  \\ \hline
+\mb{571} & \mb{2} & \mb{1042} & 5000& 827  & 5  & 2150 & 12    & 0.1   & 2162 \\ \hline
 \end{tabular}
 \end{table}}
 
 \end{frame}
 
+\begin{frame}{\large MFR Experiments: Montgomery}
+
+{\tiny
+\begin{table}[]
+\centering
+\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+$\textit{k}$ = composite field size (degree of $P_k(X)$), 
+AM = Maximum resident memory utilization in Mega Bytes,
+\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
+% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
+% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
+VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
+RC = Required time for MFR check, TE = Required time for total execution}}}
+\label{masusmontspec}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
+& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.9  & 16  & 0.04 & 0.56 & 35.6     & 36   \\ \hline
+\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.8  & 32  & 0.13 & 0.57 & 27.6     & 28.3 \\ \hline
+\mb{64 } & \mb{3} & \mb{192 } & 160 & 9.6  & 47  & 0.52 & 0.32 & 1.79     & 2.63 \\ \hline
+\mb{96 } & \mb{2} & \mb{96  } & 240 & 21   & 96  & 1.36 & 1.27 & 13.3     & 16   \\ \hline
+\mb{128} & \mb{2} & \mb{128 } & 370 & 35.8 & 128 & 2.8  & 1.4  & 64.2     & 68.4 \\ \hline
+\mb{163} & \mb{5} & \mb{815 } & 550 & 57.5 & 128 & 5.2  & 6.8  & 262      & 274  \\ \hline
+\mb{233} & \mb{2} & \mb{466 } & 750 & 112  & 233 & 11.5 & 3.5  & 360      & 375  \\ \hline
+\mb{283} & \mb{2} & \mb{566 } & 1300& 171  & 283 & 35   & 11   & 1503     & 1549 \\ \hline
+\mb{409} & \mb{2} & \mb{818 } & 2400& 340  & 409 & 134  & 10   & 4920*    & 5064 \\ \hline
+\mb{571} & \mb{2} & \mb{1042} & 5000& 663  &  12 & 1313 & 82   & 0.2$\td$ & 1395 \\ \hline
+\end{tabular}
+\end{table}}
+
+\end{frame}
+
+\begin{frame}{\large MFR Experiments: Point Addition}
+
+{\tiny
+\begin{table}[]
+\centering
+\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+$\textit{k}$ = composite field size (degree of $P_k(X)$), 
+AM = Maximum resident memory utilization in Mega Bytes,
+\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
+% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
+% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
+VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
+RC = Required time for MFR check, TE = Required time for total execution}}}
+\label{masusmontspec}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
+& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.9  & 7   & 0.06 & 0.11 & 1.73 & 1.9  \\ \hline
+\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.9  & 13  & 0.18 & 0.8  & 134  & 135  \\ \hline
+\mb{64 } & \mb{3} & \mb{192 } & 160 & 10.6 & 64  & 0.84 & 0.56 & 58.1 & 59.5 \\ \hline
+\mb{96 } & \mb{2} & \mb{96  } & 240 & 24.8 & 96  & 2.46 & 0.64 & 14.9 & 18   \\ \hline
+\mb{128} & \mb{2} & \mb{128 } & 370 & 43.2 & 128 & 6.45 & 1.55 & 73   & 81   \\ \hline
+\mb{163} & \mb{5} & \mb{815 } & 550 & 71.6 & 22  & 15.7 & 4.7  & 15   & 35.4 \\ \hline
+\mb{233} & \mb{2} & \mb{466 } & 750 & 122  & 233 & 19.2 & 2.15 & 0.15 & 21.5 \\ \hline
+\mb{283} & \mb{2} & \mb{566 } & 1300& 208  & 4   & 80.4 & 6.1  & 0.1  & 86.6 \\ \hline
+\mb{409} & \mb{2} & \mb{818 } & 2400& 368  & 409 & 220  & 10   & 2007 & 2237 \\ \hline
+\mb{571} & \mb{2} & \mb{1042} & 5000& 813  & 5   & 2583 & 27   & 880  & 3490 \\ \hline
+\end{tabular}
+\end{table}}
+
+\end{frame}
 % \begin{frame}{\large MFR Experiments: Custom software}
 
 % {\tiny
@@ -219,7 +320,7 @@
 % }
 % \end{frame}
 
-\begin{frame}{\large Contributions and future work}
+\begin{frame}{\large Conclusion and Future work}
 \bi
 
 	\item Algebraic approach for $m$-target MFR checking
@@ -256,16 +357,22 @@
 		\ei
 	\ei
 	\pause
-	\item The \textit{unknown component} problem is then formulated as an ideal membership test and
-	solved using extended \Grobner Basis: 
-	\begin{center}
-		\begin{align*}
-		&W + \be^0 e_0 + \be d_5  = W + U = W +\be^0(a_1b_2+a_2b_1)+\be a_2b_2;\\
-		&e_0 = a_1b_2+a_2b_1;~~d_5 = a_2b_2;
-		\end{align*}
-	\end{center}
+	\item A polynomial which can be computed to rectify the circuit
+	\bi
+		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
+		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
+	\ei
+	% \item The \textit{unknown component} problem is then formulated as an ideal membership test and
+	% solved using extended \Grobner Basis: 
+	% \begin{center}
+	% 	\begin{align*}
+	% 	&W + \be^0 e_0 + \be d_5  = W + U = W +\be^0(a_1b_2+a_2b_1)+\be a_2b_2;\\
+	% 	&e_0 = a_1b_2+a_2b_1;~~d_5 = a_2b_2;
+	% 	\end{align*}
+	% \end{center}
 \ei
 \end{frame}
+
 
 % \begin{frame}{\large Rectification function computation }
 

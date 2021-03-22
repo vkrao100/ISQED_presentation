@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  15 MAR 2021 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  16 MAR 2021 20:48
 entering extended mode
 **./ISQED_presentation.tex
 (ISQED_presentation.tex
@@ -1054,7 +1054,14 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count344
 \l__pdf_internal_box=\box84
-) (ISQED_presentation.aux)
+) (ISQED_presentation.aux
+
+LaTeX Warning: Label `masusmontspec' multiply defined.
+
+
+LaTeX Warning: Label `masusmontspec' multiply defined.
+
+)
 \openout1 = `ISQED_presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -1531,39 +1538,1930 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 59.
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 89.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [30
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 89.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [31
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 89.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [32
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 126.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [33
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 126.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [34
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [35
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [36
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [37
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [38
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [39
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [40
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [41
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [42
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [43
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[44
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [45
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [46
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [47
+
+]) (mfr.tex
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 32.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [48
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 32.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [49
+
+]
+File: mas_3_ddc_mfr_a.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_a.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_a.pdf  used on input line 64.
+(pdftex.def)             Requested size: 162.21013pt x 180.26527pt.
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 64.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [50
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [51
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [52
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [53
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [54
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [55
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [56
+
+]
+<mas_3_ddc_mfr_b.pdf, id=1521, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 141.
+(pdftex.def)             Requested size: 168.14789pt x 178.31635pt.
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 141.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[57
+
+ <./mas_3_ddc_mfr_b.pdf>]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [58
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [59
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [60
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 219.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [61
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [62
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [63
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [64
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [65
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [66
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[67
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [68
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [69
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [70
+
+]
+File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 271.
+(pdftex.def)             Requested size: 168.14789pt x 178.31635pt.
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 271.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [71
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [72
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [73
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [74
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [75
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [76
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [77
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [78
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [79
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [80
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [81
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 342.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[82
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [83
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [84
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [85
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [86
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [87
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [88
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [89
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [90
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [91
+
+]) (objs.tex
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [92
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [93
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [94
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[95
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [96
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [97
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 178.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [98
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 178.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [99
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <6> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 211.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
+                                                  {5} & \mb {80 } & 100 & 0....
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
+                                                  {80 } & 100 & 0.8 & 6 & 0....
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
+                                                  {5} & \mb {160 } & 120 & 2...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
+                                                  {160 } & 120 & 2.8 & 8 & 0...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
+                                                  {3} & \mb {192 } & 160 & 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
+                                                  {192 } & 160 & 11.2 & 5 & ...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
+                                                  {2} & \mb {96 } & 240 & 24...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
+                                                  {96 } & 240 & 24.5 & 5 & 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
+                                                  {2} & \mb {128 } & 370 & 4...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
+                                                  {128 } & 370 & 43.2 & 5 & ...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
+                                                  {5} & \mb {815 } & 550 & 6...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
+                                                  {815 } & 550 & 69.8 & 6 & ...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
+                                                  {2} & \mb {466 } & 750 & 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
+                                                  {466 } & 750 & 119 & 3 & 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
+                                                  {2} & \mb {566 } & 1300& 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
+                                                  {566 } & 1300& 190 & 2 & 3...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
+                                                  {2} & \mb {818 } & 2400& 3...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
+                                                  {818 } & 2400& 384 & 2 & 1...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
+                                                  {2} & \mb {1042} & 5000& 8...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
+                                                  {1042} & 5000& 827 & 5 & 2...
+l.211 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 211.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[100
+
+]pdfTeX warning (ext4): destination with the same identifier (name{masusmontspe
+c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.244 \end{frame}
+                 
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
+                                                  {5} & \mb {80 } & 100 & 0....
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
+                                                  {80 } & 100 & 0.9 & 16 & 0...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
+                                                  {5} & \mb {160 } & 120 & 2...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
+                                                  {160 } & 120 & 2.8 & 32 & ...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
+                                                  {3} & \mb {192 } & 160 & 9...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
+                                                  {192 } & 160 & 9.6 & 47 & ...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
+                                                  {2} & \mb {96 } & 240 & 21...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
+                                                  {96 } & 240 & 21 & 96 & 1....
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
+                                                  {2} & \mb {128 } & 370 & 3...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
+                                                  {128 } & 370 & 35.8 & 128 ...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
+                                                  {5} & \mb {815 } & 550 & 5...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
+                                                  {815 } & 550 & 57.5 & 128 ...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
+                                                  {2} & \mb {466 } & 750 & 1...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
+                                                  {466 } & 750 & 112 & 233 &...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
+                                                  {2} & \mb {566 } & 1300& 1...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
+                                                  {566 } & 1300& 171 & 283 &...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
+                                                  {2} & \mb {818 } & 2400& 3...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
+                                                  {818 } & 2400& 340 & 409 &...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
+                                                  {2} & \mb {1042} & 5000& 6...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
+                                                  {1042} & 5000& 663 & 12 & ...
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \td 
+                    
+l.244 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 244.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[101
+
+]pdfTeX warning (ext4): destination with the same identifier (name{masusmontspe
+c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.277 \end{frame}
+                 
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
+                                                  {5} & \mb {80 } & 100 & 0....
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
+                                                  {80 } & 100 & 0.9 & 7 & 0....
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
+                                                  {5} & \mb {160 } & 120 & 2...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
+                                                  {160 } & 120 & 2.9 & 13 & ...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
+                                                  {3} & \mb {192 } & 160 & 1...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
+                                                  {192 } & 160 & 10.6 & 64 &...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
+                                                  {2} & \mb {96 } & 240 & 24...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
+                                                  {96 } & 240 & 24.8 & 96 & ...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
+                                                  {2} & \mb {128 } & 370 & 4...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
+                                                  {128 } & 370 & 43.2 & 128 ...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
+                                                  {5} & \mb {815 } & 550 & 7...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
+                                                  {815 } & 550 & 71.6 & 22 &...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
+                                                  {2} & \mb {466 } & 750 & 1...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
+                                                  {466 } & 750 & 122 & 233 &...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
+                                                  {2} & \mb {566 } & 1300& 2...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
+                                                  {566 } & 1300& 208 & 4 & 8...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
+                                                  {2} & \mb {818 } & 2400& 3...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
+                                                  {818 } & 2400& 368 & 409 &...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mb 
+                    
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
+                                                  {2} & \mb {1042} & 5000& 8...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
+                                                  {1042} & 5000& 813 & 5 & 2...
+l.277 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 277.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[102
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [103
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [104
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [105
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [106
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 374.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [107
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 374.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [108
+
+])
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 208.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [109
+
+] (bkp1.tex
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 29.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [110
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 53.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [111
+
+]
+! Undefined control sequence.
+<argument> ...gn {\hrule height 1pt} \par 1 & \mb 
+                                                  {16} & \mb {7} & \mb {112 ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...height 1pt} \par 1 & \mb {16} & \mb 
+                                                  {7} & \mb {112 } & 100 & 0...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...} \par 1 & \mb {16} & \mb {7} & \mb 
+                                                  {112 } & 100 & 0.8 & 11 & ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... 0.55 & 33 & 33.6 \\ \hline 2 & \mb 
+                                                  {32 } & \mb {5} & \mb {160...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... 33.6 \\ \hline 2 & \mb {32 } & \mb 
+                                                  {5} & \mb {160 } & 120 & 2...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 2 & \mb {32 } & \mb {5} & \mb 
+                                                  {160 } & 120 & 2.8 & 8 & 0...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...& 0.8 & 244 & 245 \\ \hline 3 & \mb 
+                                                  {64 } & \mb {3} & \mb {192...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...& 245 \\ \hline 3 & \mb {64 } & \mb 
+                                                  {3} & \mb {192 } & 160 & 1...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 3 & \mb {64 } & \mb {3} & \mb 
+                                                  {192 } & 160 & 11.2 & 5 & ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...0.8 & 0.2 & 4 & 5 \\ \hline 4 & \mb 
+                                                  {96 } & \mb {2} & \mb {96 ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...4 & 5 \\ \hline 4 & \mb {96 } & \mb 
+                                                  {2} & \mb {96 } & 240 & 24...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 4 & \mb {96 } & \mb {2} & \mb 
+                                                  {96 } & 240 & 24.5 & 5 & 1...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ....66 & 35.5 & 38.6 \\ \hline 5 & \mb 
+                                                  {128} & \mb {2} & \mb {128...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... 38.6 \\ \hline 5 & \mb {128} & \mb 
+                                                  {2} & \mb {128 } & 370 & 4...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 5 & \mb {128} & \mb {2} & \mb 
+                                                  {128 } & 370 & 43.2 & 5 & ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...& 6 & 2 & 73 & 81 \\ \hline 6 & \mb 
+                                                  {163} & \mb {5} & \mb {815...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... & 81 \\ \hline 6 & \mb {163} & \mb 
+                                                  {5} & \mb {815 } & 550 & 6...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 6 & \mb {163} & \mb {5} & \mb 
+                                                  {815 } & 550 & 69.8 & 6 & ...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...& 4.6 & 37 & 57.6 \\ \hline 7 & \mb 
+                                                  {409} & \mb {2} & \mb {818...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... 57.6 \\ \hline 7 & \mb {409} & \mb 
+                                                  {2} & \mb {818 } & 2400& 3...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 7 & \mb {409} & \mb {2} & \mb 
+                                                  {818 } & 2400& 384 & 2 & 2...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... & 8 & 928 & 1146 \\ \hline 8 & \mb 
+                                                  {571} & \mb {2} & \mb {104...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ... 1146 \\ \hline 8 & \mb {571} & \mb 
+                                                  {2} & \mb {1042} & 5000& 8...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...hline 8 & \mb {571} & \mb {2} & \mb 
+                                                  {1042} & 5000& 827 & 5 & 2...
+l.101 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 101.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[112
+
+])
+\tf@nav=\write7
+\openout7 = `ISQED_presentation.nav'.
+
+\tf@toc=\write8
+\openout8 = `ISQED_presentation.toc'.
+
+\tf@snm=\write9
+\openout9 = `ISQED_presentation.snm'.
+
+ (ISQED_presentation.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `ISQED_presentation.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 22173 strings out of 479584
+ 419537 string characters out of 2871496
+ 775403 words of memory out of 3000000
+ 38500 multiletter control sequences out of 15000+200000
+ 472180 words of font info for 154 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 131i,17n,132p,683b,645s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic
+/uhvro8a.pfb>
+Output written on ISQED_presentation.pdf (112 pages, 1061980 bytes).
+PDF statistics:
+ 3090 PDF objects out of 3580 (max. 8388607)
+ 230 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+
