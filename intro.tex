@@ -2,16 +2,14 @@
 \begin{frame}{\large Outline}
 % Overview of the problems addressed and their solutions
 \bi
-	\item Problem Description
-	% \item Motivation and Application
+	\item Problem Description and Motivation
 	\item Preliminaries
-	\item Problem Statement and Objective
-	\item Single-fix Application
-	\item Multi-Fix setup
+	\item Unified Framework
 	\bi
 		\item Mathematical Challenges
 	\ei
 	\item Rectifiability Check
+	\item Implementation
 	\item Experimental Results
 	\item Summary and Future work
 	% \bi
@@ -35,48 +33,87 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large Problem Description:Rectification}
+
+\begin{frame}{\large Problem Description: Rectification}
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[scale=0.26]{mas_3_ddc_mfr_a.pdf}
-\caption*{A faulty implementation of a 3-bit modulo multiplier ($Z = A \cdot B~~mod~P(x)$)
+\caption*{
 % ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
 }\label{fig:mas_bug_Wa}
 \end{figure}
 \end{frame}
 
-
 \begin{frame}{\large Problem Description: Rectification}
-\bi 
-	% \item Identify rectification target nets
-	% \bi
-	% 	\item Post-verification failure analysis
-	% 	\item Primary output always a candidate for a correction
-	% \ei
-	\item Agnostic to the fault model, check for rectification at particular targets
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[scale=0.26]{mas_3_ddc_mfr_b_bb.pdf}
+\caption*{
+% ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
+}\label{fig:mas_bug_Wb_bb}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{\large Motivation: Finite Field Circuits}
+\bi
+	\item Applications:
 	\bi
-	\pause
-		\item Single-fix Rectification (SFR)
+		\item Cryptography: RSA, Ellyptic Curve Cryptography (ECC) 
+		\item Error Correcting Codes, Digital Signal Processing, RFID, etc.
+		\pause
 		\bi
-			\item Correct circuit by changing function at a single net
+			\item Crypto-system bugs can leak secret keys [{\it Biham. et al}, Crypto'08]
+			\item RFID tag cloning could cause counterfeiting [{\it Batina. et al}, Security'09]
+		\ei
+		\pause
+		\item Large datapath sizes ($n$) in ECC crypto systems 
+		\bi
+			\item $n=163, 233, 283, 409, 571$ (NIST standard)
 		\ei
 	\ei
 	\pause
 	\vspace{0.1in}
-	\vspace{0.1in}
-	\vspace{0.1in}
-	\item In a general setting, SFR might not be desired or may not exist
+	\item Rectification Motivation: 
 	\bi
-	\pause
-	\item Multi-fix Rectification (MFR)
-	\bi
-		\item Correct circuit by changing functions at multiple nets
-		\item Contribution: Multi-fix rectifiability setup and check
-	\ei
+		% \item Arithmetic circuits mostly custom designed; potential for errors
+		\item Automated debugging
+		\item Synthesize sub-functions as opposed to complete redesign
 	\ei
 \ei
 \end{frame}
+% \begin{frame}{\large Problem Description: Rectification}
+% \bi 
+% 	% \item Identify rectification target nets
+% 	% \bi
+% 	% 	\item Post-verification failure analysis
+% 	% 	\item Primary output always a candidate for a correction
+% 	% \ei
+% 	\item Agnostic to the fault model, check for rectification at particular targets
+% 	\bi
+% 	\pause
+% 		\item Single-fix Rectification (SFR)
+% 		\bi
+% 			\item Correct circuit by changing function at a single net
+% 		\ei
+% 	\ei
+% 	\pause
+% 	\vspace{0.1in}
+% 	\vspace{0.1in}
+% 	\vspace{0.1in}
+% 	\item In a general setting, SFR might not be desired or may not exist
+% 	\bi
+% 	\pause
+% 	\item Multi-fix Rectification (MFR)
+% 	\bi
+% 		\item Correct circuit by changing functions at multiple nets
+% 		\item Contribution: Multi-fix rectifiability setup and check
+% 	\ei
+% 	\ei
+% \ei
+% \end{frame}
 
 %https://ieeexplore.ieee.org/document/8405614 - cryptography
 

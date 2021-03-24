@@ -127,6 +127,55 @@
 
 % \end{frame}
 
+\begin{frame}{\large{Implementation: Boolean Polynomials and ZDDs}}
+\bi
+  \item Boolean polynomials as unate cube sets
+  \bi
+      \item Monomial: a product of positive literals or a cube
+      \item Polynomial: set of such cubes
+  \ei
+  \pause
+  \item ZDDs efficient for manipulating unate cube sets [Minato, DAC'93]
+  \pause
+  \item $r_1 = yd + y + d$ as $\{yd,y,d\}$
+  % \item Cubes on ZDDs $\equiv$ Paths terminating in Node {\bf 1}
+  % \item Solid edge implies variable present in cube 
+\ei
+\begin{figure}[hbt]
+\centering
+\includegraphics[scale=1.5]{r1_clean_paths.pdf}
+\caption*{Paths terminating in 1: ${\color{red} yd}, {\color{green} y}, {\color{blue} d}  $.}
+\label{r1}
+\end{figure}
+  
+\end{frame}
+
+\begin{frame}{\large{Improved Reduction Using ZDDs}}
+\bi
+  \item $r_1=yd + y + d$, $f_2=y + xc + x + c$, $r_1 \xrightarrow{f_2}_+$
+  % \item $r_1 = yd + y + d$, ~~$f_2 = y + xc + x + c$
+  % \item Quotient$(r_1 \xrightarrow{f_2}_+ r_2) = d+1$
+  % \item $r_1 \xrightarrow{f_2}_+ r_2 = $
+        {\small
+        \begin{align*}
+          & (yd + y + d) + (d + 1)\cdot(y + xc + x + c) \pmod{2}\\
+          &= 2\cdot(yd + y) + d + (d+1)\cdot(xc + x + c) \pmod{2}\\
+          &= \textcolor{green}{d} + (\textcolor{red}{d+1})\cdot(\textcolor{blue}{xc + x + c})  \pmod{2}
+        \end{align*}
+        }
+  % \item This expression provides a formula to compute remainder in one step
+\ei
+\begin{figure}[hbt]
+\centering
+\includegraphics[scale=0.9]{r1_f2_2.pdf}
+% \caption{ZDDs for polynomial $r_1$ and $f_2$.}
+\label{f2}
+\end{figure}
+\bi
+  \item One step reduction: $else(r_1) + then(r_1)\cdot else(f_2)$ ~~[Algorithm 6]
+\ei
+\end{frame}
+
 \begin{frame}{\large Implementation}
 \bi
 	\item Custom software: 
@@ -152,59 +201,44 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large Focus: Finite Field Arithmetic Circuits}
-\bi
-	\item Applications:
-	\bi
-		\item RSA, ECC, Error correcting codes, RFID, etc.
-		\bi
-			\item Crypto-system bugs can leak secret keys [{\it Biham. et al}, Crypto'08]
-			\item RFID tag cloning could cause counterfeiting [{\it Batina. et al}, Security'09]
-		\ei
-		\item Large datapath sizes in ECC crypto systems 
-		\bi
-			\item In $\Fkn$, $n=163, 233, 283, 409, 571$ (NIST standard)
-		\ei
-	\ei
-	\pause
-	\vspace{0.1in}
-	\item Rectification Motivation: 
-	\bi
-		% \item Arithmetic circuits mostly custom designed; potential for errors
-		\item Synthesize sub-functions as opposed to complete redesign
-		\item Automated debugging
-	\ei
-\ei
+\begin{frame} {\large Overall Flow}
+
+
 \end{frame}
 
 \begin{frame}{\large MFR Experiments: Mastrovito}
 
-{\tiny
-\begin{table}[]
+% \begin{tiny}
+% $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+% $\textit{k}$ = composite field size (degree of $P_k(X)$), 
+% AM = Maximum resident memory utilization in Mega Bytes,
+% \#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+% PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
+% VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
+% RC = Required time for MFR check, TE = Required time for total execution
+% \end{tiny}
+
+{\scriptsize
+\begin{table}[bht]
 \centering
-\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
-$\textit{k}$ = composite field size (degree of $P_k(X)$), 
+\caption*{{\scriptsize $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+$\textit{k}$ = composite field size (degree of $P_k(X)$),\\ 
 AM = Maximum resident memory utilization in Mega Bytes,
-\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+\#G = Number of gates $\times 10^3$,\\ \#BO = Number of faulty outputs, 
 PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
-% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
-% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
 VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
-RC = Required time for MFR check, TE = Required time for total execution}}}
-\label{masusmontspec}
+RC = Required time for MFR check, TE = Required time for total execution}}
+\label{masvsspec}
 \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
-{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
-& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
-\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.8  & 6  & 0.04 & 0.06  & 0.12  & 0.22 \\ \hline
-\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.8  & 8  & 0.13 & 0.12  & 0.4   & 0.65 \\ \hline
-\mb{64 } & \mb{3} & \mb{192 } & 160 & 11.2 & 5  & 0.57 & 0.45  & 227   & 228  \\ \hline
-\mb{96 } & \mb{2} & \mb{96  } & 240 & 24.5 & 5  & 1.47 & 0.26  & 0.83  & 2.56 \\ \hline
-\mb{128} & \mb{2} & \mb{128 } & 370 & 43.2 & 5  & 3.23 & 0.5   & 2.03  & 5.76 \\ \hline
-\mb{163} & \mb{5} & \mb{815 } & 550 & 69.8 & 6  & 6.04 & 3.36  & 11.9  & 21.3 \\ \hline
-\mb{233} & \mb{2} & \mb{466 } & 750 & 119  & 3  & 13   & 1.2   & 0.01  & 14.2 \\ \hline
-\mb{283} & \mb{2} & \mb{566 } & 1300& 190  & 2  & 38   & 4.2   & 0.1   & 42.3 \\ \hline
-\mb{409} & \mb{2} & \mb{818 } & 2400& 384  & 2  & 190  & 5     & 0.1   & 195  \\ \hline
-\mb{571} & \mb{2} & \mb{1042} & 5000& 827  & 5  & 2150 & 12    & 0.1   & 2162 \\ \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} & {\textbf{\#G}} 
+& {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+16  & 5 & 80   & 100 & 0.8  & 6  & 0.04 & 0.06  & 0.12  & 0.22 \\ \hline
+32  & 5 & 160  & 120 & 2.8  & 8  & 0.13 & 0.12  & 0.4   & 0.65 \\ \hline
+163 & 5 & 815  & 550 & 69.8 & 6  & 6.04 & 3.36  & 11.9  & 21.3 \\ \hline
+233 & 2 & 466  & 750 & 119  & 3  & 13   & 1.2   & 0.01  & 14.2 \\ \hline
+283 & 2 & 566  & 1300& 190  & 2  & 38   & 4.2   & 0.1   & 42.3 \\ \hline
+409 & 2 & 818  & 2400& 384  & 2  & 190  & 5     & 0.1   & 195  \\ \hline
+\rowcolor{green}571 & 2 & 1042 & 5000& 827  & 5  & 2150 & 12    & 0.1   & 2162 \\ \hline
 \end{tabular}
 \end{table}}
 
@@ -212,32 +246,27 @@ RC = Required time for MFR check, TE = Required time for total execution}}}
 
 \begin{frame}{\large MFR Experiments: Montgomery}
 
-{\tiny
-\begin{table}[]
+{\scriptsize
+\begin{table}[bht]
 \centering
-\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+\caption*{{\scriptsize $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
 $\textit{k}$ = composite field size (degree of $P_k(X)$), 
-AM = Maximum resident memory utilization in Mega Bytes,
-\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+\\AM = Maximum resident memory utilization in Mega Bytes,
+\#G = Number of gates $\times 10^3$, \\ \#BO = Number of faulty outputs, 
 PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
-% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
-% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
 VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
-RC = Required time for MFR check, TE = Required time for total execution}}}
-\label{masusmontspec}
+RC = Required time for MFR check, TE = Required time for total execution}}
+\label{montvsspec}
 \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
-{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
-& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
-\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.9  & 16  & 0.04 & 0.56 & 35.6     & 36   \\ \hline
-\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.8  & 32  & 0.13 & 0.57 & 27.6     & 28.3 \\ \hline
-\mb{64 } & \mb{3} & \mb{192 } & 160 & 9.6  & 47  & 0.52 & 0.32 & 1.79     & 2.63 \\ \hline
-\mb{96 } & \mb{2} & \mb{96  } & 240 & 21   & 96  & 1.36 & 1.27 & 13.3     & 16   \\ \hline
-\mb{128} & \mb{2} & \mb{128 } & 370 & 35.8 & 128 & 2.8  & 1.4  & 64.2     & 68.4 \\ \hline
-\mb{163} & \mb{5} & \mb{815 } & 550 & 57.5 & 128 & 5.2  & 6.8  & 262      & 274  \\ \hline
-\mb{233} & \mb{2} & \mb{466 } & 750 & 112  & 233 & 11.5 & 3.5  & 360      & 375  \\ \hline
-\mb{283} & \mb{2} & \mb{566 } & 1300& 171  & 283 & 35   & 11   & 1503     & 1549 \\ \hline
-\mb{409} & \mb{2} & \mb{818 } & 2400& 340  & 409 & 134  & 10   & 4920*    & 5064 \\ \hline
-\mb{571} & \mb{2} & \mb{1042} & 5000& 663  &  12 & 1313 & 82   & 0.2$\td$ & 1395 \\ \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} & {\textbf{\#G}} 
+& {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+16  & 5 & 80   & 100 & 0.9  & 16  & 0.04 & 0.56 & 35.6     & 36   \\ \hline
+32  & 5 & 160  & 120 & 2.8  & 32  & 0.13 & 0.57 & 27.6     & 28.3 \\ \hline
+163 & 5 & 815  & 550 & 57.5 & 128 & 5.2  & 6.8  & 262      & 274  \\ \hline
+233 & 2 & 466  & 750 & 112  & 233 & 11.5 & 3.5  & 360      & 375  \\ \hline
+283 & 2 & 566  & 1300& 171  & 283 & 35   & 11   & 1503     & 1549 \\ \hline
+\rowcolor{red}409 & 2 & 818  & 2400& 340  & 409 & 134  & 10   & 4920 & 5064 \\ \hline
+\rowcolor{green}571 & 2 & 1042 & 5000& 663  &  12 & 1313 & 82   & 0.2 & 1395 \\ \hline
 \end{tabular}
 \end{table}}
 
@@ -245,36 +274,66 @@ RC = Required time for MFR check, TE = Required time for total execution}}}
 
 \begin{frame}{\large MFR Experiments: Point Addition}
 
-{\tiny
-\begin{table}[]
+{\scriptsize
+\begin{table}[bht]
 \centering
-\caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+\caption*{{\scriptsize $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
 $\textit{k}$ = composite field size (degree of $P_k(X)$), 
-AM = Maximum resident memory utilization in Mega Bytes,
-\#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+\\AM = Maximum resident memory utilization in Mega Bytes,
+\#G = Number of gates $\times 10^3$, \\ \#BO = Number of faulty outputs, 
 PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
-% VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
-% [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
 VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
-RC = Required time for MFR check, TE = Required time for total execution}}}
-\label{masusmontspec}
+RC = Required time for MFR check, TE = Required time for total execution}}
+\label{pavsspec}
 \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
-{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
-& {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
-\mb{16}  & \mb{5} & \mb{80  } & 100 & 0.9  & 7   & 0.06 & 0.11 & 1.73 & 1.9  \\ \hline
-\mb{32 } & \mb{5} & \mb{160 } & 120 & 2.9  & 13  & 0.18 & 0.8  & 134  & 135  \\ \hline
-\mb{64 } & \mb{3} & \mb{192 } & 160 & 10.6 & 64  & 0.84 & 0.56 & 58.1 & 59.5 \\ \hline
-\mb{96 } & \mb{2} & \mb{96  } & 240 & 24.8 & 96  & 2.46 & 0.64 & 14.9 & 18   \\ \hline
-\mb{128} & \mb{2} & \mb{128 } & 370 & 43.2 & 128 & 6.45 & 1.55 & 73   & 81   \\ \hline
-\mb{163} & \mb{5} & \mb{815 } & 550 & 71.6 & 22  & 15.7 & 4.7  & 15   & 35.4 \\ \hline
-\mb{233} & \mb{2} & \mb{466 } & 750 & 122  & 233 & 19.2 & 2.15 & 0.15 & 21.5 \\ \hline
-\mb{283} & \mb{2} & \mb{566 } & 1300& 208  & 4   & 80.4 & 6.1  & 0.1  & 86.6 \\ \hline
-\mb{409} & \mb{2} & \mb{818 } & 2400& 368  & 409 & 220  & 10   & 2007 & 2237 \\ \hline
-\mb{571} & \mb{2} & \mb{1042} & 5000& 813  & 5   & 2583 & 27   & 880  & 3490 \\ \hline
+{\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} & {\textbf{\#G}} 
+& {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+16 & 5 & 80   & 100 & 0.9  & 7   & 0.06 & 0.11 & 1.73 & 1.9  \\ \hline
+32  & 5 & 160  & 120 & 2.9  & 13  & 0.18 & 0.8  & 134  & 135  \\ \hline
+163 & 5 & 815  & 550 & 71.6 & 22  & 15.7 & 4.7  & 15   & 35.4 \\ \hline
+233 & 2 & 466  & 750 & 122  & 233 & 19.2 & 2.15 & 0.15 & 21.5 \\ \hline
+\rowcolor{green}283 & 2 & 566  & 1300& 208  & 4   & 80.4 & 6.1  & 0.1  & 86.6 \\ \hline
+\rowcolor{red}409 & 2 & 818  & 2400& 368  & 409 & 220  & 10   & 2007 & 2237 \\ \hline
+571 & 2 & 1042 & 5000& 813  & 5   & 2583 & 27   & 880  & 3490 \\ \hline
 \end{tabular}
 \end{table}}
 
 \end{frame}
+
+
+
+% {\tiny
+% \begin{table}[]
+% \centering
+% \caption{{\footnotesize {\footnotesize Time is in seconds; $\textit{n}$ = Datapath Size, $\textit{m}$ = target word size, 
+% $\textit{k}$ = composite field size (degree of $P_k(X)$), 
+% AM = Maximum resident memory utilization in Mega Bytes,
+% \#G = Number of gates $\times 10^3$, \#BO = Number of faulty outputs, 
+% PBS = Required time for PolyBori setup (ring declaration/poly collection/spec collection),
+% % VF = time for verification (Sec.~\ref{sec:verify}), MS = Multi-fix check setup time (Sec.~\ref{sec:comps} 
+% % [Rectification Setup]), RC = time for MFR check (Thm.~\ref{Thm:rect}), TE = Total execution time.}}
+% VMS = Required time for verification, polynomial factorization and computing $P_k(X)$, and MFR setup, 
+% RC = Required time for MFR check, TE = Required time for total execution}}}
+% \label{masusmontspec}
+% \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |} \hline
+% {\textit{\textbf{n}}} & {\textit{\textbf{m}}} & {\textit{\textbf{k}}} & {\textbf{AM}} 
+% & {\textbf{\#G}} & {\textbf{\#BO}} & {\textbf{PBS}} & {\textbf{VMS}} & {\textbf{RC}} & {\textbf{TE}} \\ \hline 
+% \mb{16}  & \mb{5} & \mb{80  } & 100 & 0.9  & 7   & 0.06 & 0.11 & 1.73 & 1.9  \\ \hline
+% \mb{32 } & \mb{5} & \mb{160 } & 120 & 2.9  & 13  & 0.18 & 0.8  & 134  & 135  \\ \hline
+% \mb{64 } & \mb{3} & \mb{192 } & 160 & 10.6 & 64  & 0.84 & 0.56 & 58.1 & 59.5 \\ \hline
+% \mb{96 } & \mb{2} & \mb{96  } & 240 & 24.8 & 96  & 2.46 & 0.64 & 14.9 & 18   \\ \hline
+% \mb{128} & \mb{2} & \mb{128 } & 370 & 43.2 & 128 & 6.45 & 1.55 & 73   & 81   \\ \hline
+% \mb{163} & \mb{5} & \mb{815 } & 550 & 71.6 & 22  & 15.7 & 4.7  & 15   & 35.4 \\ \hline
+% \mb{233} & \mb{2} & \mb{466 } & 750 & 122  & 233 & 19.2 & 2.15 & 0.15 & 21.5 \\ \hline
+% \mb{283} & \mb{2} & \mb{566 } & 1300& 208  & 4   & 80.4 & 6.1  & 0.1  & 86.6 \\ \hline
+% \mb{409} & \mb{2} & \mb{818 } & 2400& 368  & 409 & 220  & 10   & 2007 & 2237 \\ \hline
+% \mb{571} & \mb{2} & \mb{1042} & 5000& 813  & 5   & 2583 & 27   & 880  & 3490 \\ \hline
+% \end{tabular}
+% \end{table}}
+
+% \end{frame}
+
+
 % \begin{frame}{\large MFR Experiments: Custom software}
 
 % {\tiny
@@ -338,40 +397,43 @@ RC = Required time for MFR check, TE = Required time for total execution}}}
 	\vspace{0.1in}
 	\item Computation of rectification function at the word-level
 	\bi
-		\item Define and formulate existence of don't cares at the word-level
+		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
+		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
 	\ei
+	\pause
+	\item Define and formulate existence of don't cares at the word-level
 	\pause
 	\item Extend the approach to integer arithmetic circuits
 \ei
 \end{frame}
 
 
-\begin{frame}{\large MFR Function Example}
-\bi
-	\item Compute a rectification function of the form $W = U(X_{PI})$ 
-	\bi
-		\item Here $U$ is the \textit{unknown component} computed as an $m$-bit-vector word
-		\item It represents the function $W = \sum_{i=0}^{m-1}\be^iu_i$ 
-		\bi
-			\item Where $u_i$'s represent the individual Boolean functions for the respective $w_i$'s.
-		\ei
-	\ei
-	\pause
-	\item A polynomial which can be computed to rectify the circuit
-	\bi
-		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
-		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
-	\ei
-	% \item The \textit{unknown component} problem is then formulated as an ideal membership test and
-	% solved using extended \Grobner Basis: 
-	% \begin{center}
-	% 	\begin{align*}
-	% 	&W + \be^0 e_0 + \be d_5  = W + U = W +\be^0(a_1b_2+a_2b_1)+\be a_2b_2;\\
-	% 	&e_0 = a_1b_2+a_2b_1;~~d_5 = a_2b_2;
-	% 	\end{align*}
-	% \end{center}
-\ei
-\end{frame}
+% \begin{frame}{\large MFR Function Example}
+% \bi
+% 	\item Compute a rectification function of the form $W = U(X_{PI})$ 
+% 	\bi
+% 		% \item Here $U$ is the \textit{unknown component} computed as an $m$-bit-vector word
+% 		\item $U(X_{PI}) = \sum_{i=0}^{m-1}\be^iu_i$ 
+% 		\bi
+% 			\item Where $u_i$'s represent the individual Boolean functions for the respective $w_i$'s.
+% 		\ei
+% 	\ei
+% 	\pause
+% 	\item A polynomial which can be computed to rectify the circuit
+% 	\bi
+% 		\item $W = a_2b_1b_2 + \beta \cdot a_2b_2$
+% 		\item $r_3 = (a_2 \wedge b_1 \wedge b_2),~~rr_3 = (a_2 \wedge b_2)$
+% 	\ei
+% 	% \item The \textit{unknown component} problem is then formulated as an ideal membership test and
+% 	% solved using extended \Grobner Basis: 
+% 	% \begin{center}
+% 	% 	\begin{align*}
+% 	% 	&W + \be^0 e_0 + \be d_5  = W + U = W +\be^0(a_1b_2+a_2b_1)+\be a_2b_2;\\
+% 	% 	&e_0 = a_1b_2+a_2b_1;~~d_5 = a_2b_2;
+% 	% 	\end{align*}
+% 	% \end{center}
+% \ei
+% \end{frame}
 
 
 % \begin{frame}{\large Rectification function computation }

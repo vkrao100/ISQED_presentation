@@ -1,35 +1,4 @@
-\begin{frame}{\large Multi-fix Rectification: Prior work}
 
-% MFR 
-% 
-% Iterative incremental SAT 
-% Verification: Computer Algebra
-% [Lv. et al, TCAD’13] [Sayed. et al, DATE’16] [Ritirc. et al, FMCAD’17]
-% Rectification using Craig Interpolants in Algebraic Geometry
-% [Our research group, Gupta. et al, VLSI-SOC’18]
-% Automated Debugging using Computer Algebra
-% [Mishra. et al, ICCD’17] [Mishra. et al, DATE’16] [Ciesielski. et al, DAC’15]
-%  Incorrect and incomplete: Approach fails on the above circuit
-\bi
-\item Craig interpolation and/or iterative SAT solving [{\it Huang. et al}, DAC'11][{\it Huang. et al}, DATE'12]
-\bi
-	\item Iteratively and incrementally patch the circuit
-	\item Compute multiple partial single-fix functions at the given $m$ targets
-\ei
-\item Resource aware ECO patch generation [{\it Jiang. et al}, DAC'18][{\it Mishchenko. et al}, DAC'18]
-		[{\it Fujita. et al}, ISCAS'19]
-\item Symbolic sampling technique [{\it Jiang. et al}, DAC'19]
-\bi
-	\item Enumerate rectification points functionally and match the circuitry of patches implicitly
-	\item Scalability achieved by modeling computations in symbolic sampling domain
-	% \item Doesn't discuss application to arithmetic circuits
-\ei
-\pause
-\vspace{0.1in}
-\item Approaches infeasible on arithmetic circuits
-
-\ei
-\end{frame}
 
 % \begin{frame}{\large MFR Contribution: Approach on finite field circuits}
 % % \item In a general setting a SFR may not exist even for trivial design bugs in smaller circuits.
@@ -53,15 +22,15 @@
 % \ei
 % \end{frame}
 
-\begin{frame}{\large Application: Multi-fix Rectification}
-\begin{figure}[hbt]
-\centering
-\includegraphics[scale=0.24]{mas_3_ddc_mfr_a.pdf}
-\caption*{A faulty implementation of a 3-bit ($n$=3) Mastrovito multiplier
-% ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
-}
-\end{figure}
-\end{frame}
+% \begin{frame}{\large Application: Multi-fix Rectification}
+% \begin{figure}[hbt]
+% \centering
+% \includegraphics[scale=0.24]{mas_3_ddc_mfr_a.pdf}
+% \caption*{A faulty implementation of a 3-bit ($n$=3) Mastrovito multiplier
+% % ($n$=3) with gate replacement bugs introduced at nets $d_5$ (AND replaced with an OR) and $d_2$ (AND replaced with an XOR), and a wire replacement bug at net $e_0$ (input shorted to $d_0$ instead of $d_1$).
+% }
+% \end{figure}
+% \end{frame}
 
 % \begin{frame}{\large MFR Application: Polynomial modeling}
 % \bi
@@ -87,58 +56,58 @@
 % \ei
 % \end{frame}
 
-\begin{frame}{\large MFR Notation: Field setup}
-\bi
-	\item Circuit with data-path size $n$ modeled over $\Fkn$
-	\bi
-		% \item Polynomials modeled over $R=\Fkn[Z,A,x_1,\dots,x_d]$
-		% \bi
-		% 	\item $\{x_1, \dots$ $, x_d\}$ are all the bit-level variables (nets) in the circuit
-		% 	\item $Z$ and $A$ are the word-level output and input, respectively
-		% \ei
-		\pause
-		\item $\Fkn = \Ftwo[x]\pmod{P_n(x)}$
-		\bi
-			\item $P_n(x) \in \F_2[x]$ is a given degree-$n$ primitive polynomial; $P_n(\ga) =0$ 
-			% [$\ga$ as one of its root].
-		\ei
-		\pause
-		\item  Word-level polynomials for $Z,A$:
-		\bi
-			\item $f_Z: Z + \sum_{i=0}^{n-1}\ga^iz_i,~f_A: A + \sum_{i=0}^{n-1}\ga^ia_i$ 
-		\ei
-	\ei 
-	\vspace{0.1in}
-	\vspace{0.1in}
-	\pause
-	\item Patch size $m$ modeled over $\Fkm$
-	\bi
-		\pause
-		\item $\Fkm = \Ftwo[x]\pmod{P_m(x)}$
-		\bi
-			\item We select a degree-$m$ primitive polynomial $P_m(x)\in \F_2[x]$; $P_m(\be) =0$ 
-			% [$\be$ as one of its root].
-		\ei
-		\pause
-		\item  Word-level polynomial for $W$:
-		\bi
-			\item $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
-			\item $\{w_0,\dots,w_{m-1}\} \subset \{x_1,\dots,x_d\}$
-		\ei
-	\ei
-\ei
-\end{frame}
+% \begin{frame}{\large MFR Notation: Field setup}
+% \bi
+% 	\item Circuit with data-path size $n$ modeled over $\Fkn$
+% 	\bi
+% 		% \item Polynomials modeled over $R=\Fkn[Z,A,x_1,\dots,x_d]$
+% 		% \bi
+% 		% 	\item $\{x_1, \dots$ $, x_d\}$ are all the bit-level variables (nets) in the circuit
+% 		% 	\item $Z$ and $A$ are the word-level output and input, respectively
+% 		% \ei
+% 		\pause
+% 		\item $\Fkn = \Ftwo[x]\pmod{P_n(x)}$
+% 		\bi
+% 			\item $P_n(x) \in \F_2[x]$ is a given degree-$n$ primitive polynomial; $P_n(\ga) =0$ 
+% 			% [$\ga$ as one of its root].
+% 		\ei
+% 		\pause
+% 		\item  Word-level polynomials for $Z,A$:
+% 		\bi
+% 			\item $f_Z: Z + \sum_{i=0}^{n-1}\ga^iz_i,~f_A: A + \sum_{i=0}^{n-1}\ga^ia_i$ 
+% 		\ei
+% 	\ei 
+% 	\vspace{0.1in}
+% 	\vspace{0.1in}
+% 	\pause
+% 	\item Patch size $m$ modeled over $\Fkm$
+% 	\bi
+% 		\pause
+% 		\item $\Fkm = \Ftwo[x]\pmod{P_m(x)}$
+% 		\bi
+% 			\item We select a degree-$m$ primitive polynomial $P_m(x)\in \F_2[x]$; $P_m(\be) =0$ 
+% 			% [$\be$ as one of its root].
+% 		\ei
+% 		\pause
+% 		\item  Word-level polynomial for $W$:
+% 		\bi
+% 			\item $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
+% 			\item $\{w_0,\dots,w_{m-1}\} \subset \{x_1,\dots,x_d\}$
+% 		\ei
+% 	\ei
+% \ei
+% \end{frame}
 
-\begin{frame}{\large Application: Word-level representation}
-\begin{figure}[hbt]
-\centering
-    \includegraphics[scale = 0.24]{mas_3_ddc_mfr_b.pdf}
-    \caption*{
-    Patch function modeled as a 2-bit-vector word ($m$=2), 
-    $f_W: W+ r_3 + \beta \cdot rr_3$}
-    \label{fig:mas_bug_Wb}
-\end{figure}
-\end{frame}
+% \begin{frame}{\large Application: Word-level representation}
+% \begin{figure}[hbt]
+% \centering
+%     \includegraphics[scale = 0.24]{mas_3_ddc_mfr_b.pdf}
+%     \caption*{
+%     Patch function modeled as a 2-bit-vector word ($m$=2), 
+%     $f_W: W+ r_3 + \beta \cdot rr_3$}
+%     \label{fig:mas_bug_W_b}
+% \end{figure}
+% \end{frame}
 
 
 % \begin{frame}{\large Mathematical Challenge: Picking $P_k(x)$}
@@ -160,9 +129,18 @@
 \bi
 	% \item Determine the smallest single field ($\Fkk$) to operate both circuit ($\Fkn$) and patch ($\Fkm$)
 	% \vspace{0.1in}
+	% \item Composite field $\Fkk$ 
+	% \bi
+	% 	\item $\Fkm \subset \Fkk$ and $\Fkn \subset \Fkk$, $k=LCM(m,n)$
+	% \pause
+	% \vspace{0.1in}
+	% \item What are the mathematical challenges?
+	% \pause
 	\item Smallest $k$ is $LCM(n,m)$
 	\bi
+		\vspace{0.1in}
 		\item $\Fkk \supset \Fkn$ and $\Fkk \supset \Fkm$
+		\vspace{0.1in}
 		\item $\Fkk = \Ftwo[x]\pmod{P_k(x)}$
 		\bi
 			\item $P_k(x)$ is a degree-$k$ primitive polynomial; $P_k(\al) =0$ 
@@ -170,16 +148,17 @@
 	\ei
 	\pause
 	\vspace{0.1in}
+
+	\item What $P_K(x)$ should be used for constructing $\Fkk$
+	\vspace{0.1in}
+	\pause
 	\item  Mathematical challenge: Given $P_n(x)$ and $P_m(x)$, compute $P_k(x)$ such that
 	$P_n(\ga)= P_m(\be)=P_k(\al)=0$
-	\vspace{0.1in}
-	\bi
-		\item $\ga = \al^{(2^k-1)/(2^n-1)} = \al^{\lambda}$
-		\item $\be = \al^{(2^k-1)/(2^m-1)} = \al^{\mu}$
-	\ei
 	\pause
+	\bi
+		\item How are elements $\al$, $\be$, and $\ga$ related?
+	\ei
 	\vspace{0.1in}
-	\item Solved using factorization of univariate polynomials over finite fields
 \ei
 
 \end{frame}
@@ -202,7 +181,22 @@
 
 \begin{frame}{\large Contribution: Computing $P_k(x)$}
 \bi
-	\item Obtain UPFs of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$ in $\F_2[x]$
+	\vspace{0.1in}
+	\item Property of finite fields, for any element $\phi \in \F_q$, $\phi^{q-1} = 1$
+	\vspace{0.1in}
+	\pause
+	\bi
+		\item $\ga = \al^{(2^k-1)/(2^n-1)} = \al^{\lambda}$
+		\item $\be = \al^{(2^k-1)/(2^m-1)} = \al^{\mu}$
+	\ei
+	\pause
+	\vspace{0.1in}
+	\item Univariate Polynomial Factorization (UPF)
+	\pause
+	\vspace{0.1in}
+	\bi
+		\item Obtain UPFs of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$ in $\F_2[x]$
+	\ei
 	% \bi
 	% 	\item Coefficients will be in $\Ftwo$ and degrees will be less than $\lambda$ and $\mu$, respectively.
 	% 	\bi
@@ -210,53 +204,12 @@
 	% 		\item $P_m(x^{\mu}) = P_{m1}^{b1}\cdot P_{m2}^{b2}\cdots P_{mg}^{bg}$
 	% 	\ei
 	% \ei
+	\pause
 	\vspace{0.1in}
 	\item Then, $\exists P_{k}(x) \in \F_2[x]$ as a common factor of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$, such that:
 	\bi
 		\item $P_{k}(x)$ is a degree-$k$ primitive polynomial in $\F_2[x]$ with $P_k(\al)=0$
 	\ei
-\ei
-\end{frame}
-
-\begin{frame}{\large Application: Computing $P_k(x)$}
-\bi
-\item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = \al^9,~~\be=\alpha^{21}$
-\pause
-\vspace{0.1in}
-	\item Composite field: $k=LCM(2,3)=6$
-	\vspace{0.1in}
-	\pause
-	\bi
-		\item $ UPF(P_3(x^9)) = (x^9)^3+(x^9)+1 =
-  (x^6+x^5+x^2+x+1)(x^6+x^5+1)(x^6+x^4+x^3+x+1)(x^6+x^4+x^2+x+1)(x^3+x+1);$
-		\vspace{0.1in}
-		\pause
-		\item $UPF(P_2(x^{21})) = (x^{21})^2+(x^{21})+1 =
-  (x^6+x^5+x^2+x+1)(x^6+x^5+1)(x^6+x^4+x^3+x+1)(x^6+x^5+x^3+x^2+1)
-  (x^6+x^5+x^4+x+1)(x^6+x+1)(x^6+x^3+1);$
-		\pause
-		\vspace{0.1in}
-		\item We choose $P_6(x)=x^6+x^5+1$ as the required $P_k(x)$.
-	\ei
-\ei
-\end{frame}
-
-\begin{frame}{\large MFR Notation: Incorrect $P_k(x)$}
-\bi
-	\item If we incorrectly choose $P_k(x)=x^6+x^3+1$
-	\pause
-	\item For its root $\al$, we have
-	\pause
-	\begin{align*}
-	\alpha^6 + \alpha^3 + 1 &= 0\\
- 	(\alpha^3)(\alpha^6 +\alpha^3 + 1) &= 0 ~(\text{multiply by}~\alpha^3)\\
-	\alpha^9 + \alpha^6 + \alpha^3 &= 0 \\
-	\gamma + 1 &= 0
-% \stepcounter{equation}\tag{\theequation}\label{ll} 
-\end{align*}
-	\pause
-	\item However, $\ga \neq 1$, as $\ga$ is a primitive element of $\Fkn$
-	\item Selecting arbitrary $P_k(x)$ leads to erroneous results
 \ei
 \end{frame}
 
@@ -270,58 +223,61 @@
 \end{figure}
 \end{frame}
 
-
-\begin{frame}{\large MFR Notation: Word-level reasoning}
+\begin{frame}{\large Application: Computing $P_k(x)$}
 \bi
-	\item Obtain each $w_i$ as a polynomial function in $W,\beta$
+\item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = \al^9,~~\be=\alpha^{21}$
+\pause
+\vspace{0.1in}
+	\item Composite field: $k=LCM(2,3)=6$
+	\vspace{0.1in}
+	\pause
 	\bi
-		\item $\forall i \in 1,\dots,m,~~w_i= \mathcal{F}_i(W,\beta)$
+		\item $ UPF(P_3(x^9)) = (x^9)^3+(x^9)+1 =
+  \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^4+x^2+x+1)(x^3+x+1);$
+		\vspace{0.1in}
+		\pause
+		\item $UPF(P_2(x^{21})) = (x^{21})^2+(x^{21})+1 =
+  \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^5+x^3+x^2+1)
+  (x^6+x^5+x^4+x+1)(x^6+x+1)(x^6+x^3+1);$
+		% \pause
+		% \vspace{0.1in}
+		% \item We choose $P_6(x)=x^6+x^5+1$ as the required $P_k(x)$.
 	\ei
-	\pause
-	\begin{align*}
-	W & = w_0 + \dots + \beta^{m-1} \cdot w_{m-1}\\
-    W^2 & = w_0^2 + \dots + \beta^{2(m-1)}\cdot w_{m-1}^2\\
-        & \dots \\
-    W^{2^{m-1}} & = w_0 + \dots + \beta^{2^{m-1}(m-1)}\cdot w_{m-1}
-    \end{align*}
-	\pause
-	\item Solved using Gaussian elimination
 \ei
 \end{frame}
 
-\begin{frame}{\large MFR Notation: MFR setup steps}
-\begin{enumerate}
-	\item Setup a new ring $R' = \Fkk[x_1,\dots,x_d,Z,A,W]$ 
-	\bi
-		\item $\Fkk$ is constructed using $P_k(x)$
-		\item Modify RTTO $>$ to place the target $W$ before the lowest indexed target $w_i$
-	\ei
-	\vspace{0.1in}
-	\pause
-	\item Construct a polynomial set $F'$ as follows:
-	\bi
-		\pause
-		\item Start with $F' = F$
-		\pause
-		\item Remove polynomials with $w_i$'s as leading terms
-		\pause
-		\item Substitute $\forall i \in 1,\dots,m,~~w_i= \mathcal{F}_i(W,\beta)$
-		\pause
-		\item Add $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
-		\pause
-		\item Substitute $\beta = \alpha^{\mu}, \gamma=\alpha^{\lambda}$
-	\ei
-
-\end{enumerate}
+\begin{frame}{\large Circuit polynomials over $\Fkk$}
+\bi
+	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkk)$. Over $\F_2$, $-1=+1\pmod{2}$
+\ei
+	\begin{align*}
+		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
+		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
+		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
+		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
+	\end{align*}
+\pause
+\bi
+	\item Word-level polynomials with $\ga = \al^{\lambda}$ and $\be = \al^{\mu}$
+	% \bi 
+		% \item $\ga$ = primitive element of $\Fkn$, i.e. $P_n(\ga)=0$
+	% \ei
+\ei
+\begin{equation*}
+\begin{split}
+ Output:& Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
+ Input: & A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1} \\
+ Patch: & W + w_0 +\beta \cdot w_1 + \dots +\beta^{m-1} \cdot w_{m-1}
+\end{split}
+\end{equation*}
 \end{frame}
 
 \begin{frame}{\large Circuit Polynomials and Setup}
 \bi
-	\item Ring $R = \Fkn[x_1,\dots,x_d,Z,A]$ 
-	\bi
-		\item $\Fkn$ is constructed using $P_n(x)$
-	\ei
-	\item Circuit polynomials under RTTO $>$:
+	\item Ring $R = \Fkk[Z,A,B,\dots,W,r_3,rr_3,\dots,a_0,a_1,\dots,b_1,b_2]$ 
+	\vspace{0.1in}
+	\pause
+	\item Circuit polynomials under a term order $>$:
 	\begin{small}
 	\begin{flalign*}
 	f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;   &\quad f_{22}:rr_1 + rr_3+rr_2; \\
@@ -329,43 +285,146 @@
 	f_3:B + b_0 +\ga \cdot b_1 + \ga^2 \cdot b_2;   &\quad \red{f_{26}:r_3 + r_4 + d_4;}\\
 	f_4:z_0 + d_0 + e_1;                &\quad {\red f_{27}:rr_3 + rr_4 + b_2;}\\
 	f_5:z_1 + f_0 + rr_0;               &\quad \dots\\
-	\dots                               &\quad f_{30}:rr_4 + a_2+b_2+a_2b_2;
+	\dots                               &\quad f_{30}:rr_4 + a_2+b_2+a_2b_2; \\
+	\dots								&\quad f_W:W + r_3 + \be \cdot rr_3;
 	\end{flalign*}
 	\end{small}
-	\vspace{-0.1in}
-	\item $F = \{f_1,\dots,f_{30}\}$, $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z\}$. 
-	\bi
-		\item Ideal $J+J_0=\langle F\cup F_0\rangle$ models $C$.
-	\ei
-\ei
-
-\end{frame}
-
-\begin{frame}{\large MFR Application: Word-level Formulation }
-\bi
-	\item ring $R' = \F_{2^6}[x_1,\dots,x_d,Z,A,W]$ 
-	\bi
-		\item $\F_{2^6} = \F_2[x]$ (mod $P_6(x)$), $P_6(x) = x^6+x^5+1$
-		\pause 
-		\vspace{0.1in}
-		\item WRTO $>$: {\small 
-$\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\cdots>\{d_1>d_2>d_3>r_0>d_5>rr_1\}>
-\{r_1\}>{\bf \{W\}}>\{{\bf rr_3}>rr_2\}>\{r_2>{\bf r_3}>rr_4\}>\{r_4>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}$}
-
-	\ei
-	\vspace{0.1in}
+	\vspace{-0.2in}
 	\pause
-	\item Update polynomial set $F$ to $F'$ as:
-	\begin{align*}
-		&rr_3= W^2+W,~~r_3 = \be W^2 +\be^2W \\
-		&f'_{22}:rr_1  + (W^2+W) + rr_2\\
-		&f'_{23}:r_1 + r_2 + (\be W^2 +\be^2 W)\\
-		&f_W:W + r_3 + \be \cdot rr_3\\     
-		&\be=\al^{21} \text{ and } \ga=\al^9 \\
-		&F'=\{f_1,\dots,f_{21},~f'_{22},f'_{23},f_W,\dots,f_{30}\}-\{f_{26},f_{27}\}
-	\end{align*}
+	\item $F = \{f_1,\dots,f_{30},f_W\}$
+	\item $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z,W^4-W\}$. 
+	% \bi
+	% 	\item Ideal $J+J_0=\langle F\cup F_0\rangle$ models $C$.
+	% \ei
 \ei
+
 \end{frame}
+% \begin{frame}{\large MFR Notation: Incorrect $P_k(x)$}
+% \bi
+% 	\item If we incorrectly choose $P_k(x)=x^6+x^3+1$
+% 	\pause
+% 	\item For its root $\al$, we have
+% 	\pause
+% 	\begin{align*}
+% 	\alpha^6 + \alpha^3 + 1 &= 0\\
+%  	(\alpha^3)(\alpha^6 +\alpha^3 + 1) &= 0 ~(\text{multiply by}~\alpha^3)\\
+% 	\alpha^9 + \alpha^6 + \alpha^3 &= 0 \\
+% 	\gamma + 1 &= 0
+% % \stepcounter{equation}\tag{\theequation}\label{ll} 
+% \end{align*}
+% 	\pause
+% 	\item However, $\ga \neq 1$, as $\ga$ is a primitive element of $\Fkn$
+% 	\item Selecting arbitrary $P_k(x)$ leads to erroneous results
+% \ei
+% \end{frame}
+
+% \begin{frame}{\large Application: Word-level representation}
+% \begin{figure}[hbt]
+% \centering
+%     \includegraphics[scale = 0.24]{mas_3_ddc_mfr_b.pdf}
+%     \caption*{
+%     Patch function modeled as a 2-bit-vector word ($m$=2), 
+%     $f_W: W+ r_3 + \beta \cdot rr_3$}
+% \end{figure}
+% \end{frame}
+
+
+% \begin{frame}{\large MFR Notation: Word-level reasoning}
+% \bi
+% 	\item Obtain each $w_i$ as a polynomial function in $W,\beta$
+% 	\bi
+% 		\item $\forall i \in 1,\dots,m,~~w_i= \mathcal{F}_i(W,\beta)$
+% 	\ei
+% 	\pause
+% 	\begin{align*}
+% 	W & = w_0 + \dots + \beta^{m-1} \cdot w_{m-1}\\
+%     W^2 & = w_0^2 + \dots + \beta^{2(m-1)}\cdot w_{m-1}^2\\
+%         & \dots \\
+%     W^{2^{m-1}} & = w_0 + \dots + \beta^{2^{m-1}(m-1)}\cdot w_{m-1}
+%     \end{align*}
+% 	\pause
+% 	\item Solved using Gaussian elimination
+% \ei
+% \end{frame}
+
+% \begin{frame}{\large MFR Notation: MFR setup steps}
+% \begin{enumerate}
+% 	\item Setup a new ring $R' = \Fkk[x_1,\dots,x_d,Z,A,W]$ 
+% 	\bi
+% 		\item $\Fkk$ is constructed using $P_k(x)$
+% 		\item Modify RTTO $>$ to place the target $W$ before the lowest indexed target $w_i$
+% 	\ei
+% 	\vspace{0.1in}
+% 	\pause
+% 	\item Construct a polynomial set $F'$ as follows:
+% 	\bi
+% 		\pause
+% 		\item Start with $F' = F$
+% 		\pause
+% 		\item Remove polynomials with $w_i$'s as leading terms
+% 		\pause
+% 		\item Substitute $\forall i \in 1,\dots,m,~~w_i= \mathcal{F}_i(W,\beta)$
+% 		\pause
+% 		\item Add $f_w: W + \sum_{i=0}^{m-1}\be^iw_i$
+% 		\pause
+% 		\item Substitute $\beta = \alpha^{\mu}, \gamma=\alpha^{\lambda}$
+% 	\ei
+
+% \end{enumerate}
+% \end{frame}
+
+
+% \begin{frame}{\large Circuit Polynomials and Setup}
+% \bi
+% 	\item Ring $R = \Fkn[x_1,\dots,x_d,Z,A]$ 
+% 	\bi
+% 		\item $\Fkn$ is constructed using $P_n(x)$
+% 	\ei
+% 	\item Circuit polynomials under RTTO $>$:
+% 	\begin{small}
+% 	\begin{flalign*}
+% 	f_1:Z + z_0 +\ga \cdot z_1 + \ga^2 \cdot z_2;   &\quad f_{22}:rr_1 + rr_3+rr_2; \\
+% 	f_2:A + a_0 +\ga \cdot a_1 + \ga^2 \cdot a_2;   &\quad f_{23}:r_1 + r_2+r_3;\\
+% 	f_3:B + b_0 +\ga \cdot b_1 + \ga^2 \cdot b_2;   &\quad \red{f_{26}:r_3 + r_4 + d_4;}\\
+% 	f_4:z_0 + d_0 + e_1;                &\quad {\red f_{27}:rr_3 + rr_4 + b_2;}\\
+% 	f_5:z_1 + f_0 + rr_0;               &\quad \dots\\
+% 	\dots                               &\quad f_{30}:rr_4 + a_2+b_2+a_2b_2;
+% 	\end{flalign*}
+% 	\end{small}
+% 	\vspace{-0.1in}
+% 	\item $F = \{f_1,\dots,f_{30}\}$, $F_0 =\{a_0^2-a_0,\dots,z_2^2-z_2,A^8-A,\dots,Z^8-Z\}$. 
+% 	\bi
+% 		\item Ideal $J+J_0=\langle F\cup F_0\rangle$ models $C$.
+% 	\ei
+% \ei
+
+% \end{frame}
+
+% \begin{frame}{\large MFR Application: Word-level Formulation }
+% \bi
+% 	\item ring $R' = \F_{2^6}[x_1,\dots,x_d,Z,A,W]$ 
+% 	\bi
+% 		\item $\F_{2^6} = \F_2[x]$ (mod $P_6(x)$), $P_6(x) = x^6+x^5+1$
+% 		\pause 
+% 		\vspace{0.1in}
+% 		\item WRTO $>$: {\small 
+% $\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\cdots>\{d_1>d_2>d_3>r_0>d_5>rr_1\}>
+% \{r_1\}>{\bf \{W\}}>\{{\bf rr_3}>rr_2\}>\{r_2>{\bf r_3}>rr_4\}>\{r_4>d_4\}>\{a_0>a_1>a_2>b_0>b_1>b_2\}$}
+
+% 	\ei
+% 	\vspace{0.1in}
+% 	\pause
+% 	\item Update polynomial set $F$ to $F'$ as:
+% 	\begin{align*}
+% 		&rr_3= W^2+W,~~r_3 = \be W^2 +\be^2W \\
+% 		&f'_{22}:rr_1  + (W^2+W) + rr_2\\
+% 		&f'_{23}:r_1 + r_2 + (\be W^2 +\be^2 W)\\
+% 		&f_W:W + r_3 + \be \cdot rr_3\\     
+% 		&\be=\al^{21} \text{ and } \ga=\al^9 \\
+% 		&F'=\{f_1,\dots,f_{21},~f'_{22},f'_{23},f_W,\dots,f_{30}\}-\{f_{26},f_{27}\}
+% 	\end{align*}
+% \ei
+% \end{frame}
 
 \begin{frame}{\large MFR Contribution: Rectification Check}
 %ATPG V() V() = empty
@@ -374,47 +433,79 @@ $\{Z\}>\{A>B\}>\{z_0>z_1>z_2\}>\cdots>\{d_1>d_2>d_3>r_0>d_5>rr_1\}>
 	\item Multi-fix rectification at target $W$
 	\vspace{0.1in}
 	\bi
-		\item Construct the following ideals:
+		\item Construct the following polynomial sets:
 		\begin{align*}
-			J_l' = \langle F_l'\rangle =\langle f_1,\dots,f_W'=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
+			F_l' =\langle f_1,\dots,f_W=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
 			% \text{ where $F_l'$ is obtained from $F'$ by replacing } \\
 			% f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,\text{ and } \\
   			Where~(\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
 		\end{align*}
 		\pause
-		\item Perform the reductions: 
+		\item Reduce the specification $f: Z+A\cdot B$ modulo these sets: 
 		\bi
-			\item $f\xrightarrow{F'_l, F_0}_+rem_l $, $\forall 1 \leq l \leq 2^m$
+			\item $f\xrightarrow{F_l', F_0}_+rem_l $, $\forall 1 \leq l \leq 2^m$
 		\ei
-		\item Let $V_{\Fq}(rem_l)$ denote the varieties of the respective $rem_l$'s
-		\vspace{0.1in}
+		% \item Let $V_{\Fq}(rem_l)$ denote the varieties of the respective $rem_l$'s
+		\vspace{0.2in}
 		\pause
 		\item Multi-fix rectification exists at target $W$: \\  
 				\centering
-				{\bf if and only if} $\bigcup\limits_{l=1}^{2^m}V_{\Fq}(rem_l) = \Fq^{|X_{PI}|} = V(J_0)$
+				{\bf if and only if} $ \prod_{l=1}^{2^m} rem_l \xrightarrow{F_0}_+0$
 	\ei
 \ei
 \end{frame}
 
+\begin{frame}{\large Application: Remainder generation}
+\begin{figure}[hbt]
+\centering
+    \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_00.pdf}
+    \caption*{}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\large Application: Remainder generation}
+\begin{figure}[hbt]
+\centering
+    \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_10.pdf}
+    \caption*{}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\large Application: Remainder generation}
+\begin{figure}[hbt]
+\centering
+    \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_01.pdf}
+    \caption*{}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\large Application: Remainder generation}
+\begin{figure}[hbt]
+\centering
+    \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_11.pdf}
+    \caption*{}
+\end{figure}
+\end{frame}
+
 \begin{frame}{\large MFR Application: Rectification Check}
 \bi
-	\item Constructing the $J_i$ ideals:
+	\item Constructing the $F'_l$:
 	\bi
-		\item {\small$J_1 = \langle F'_1\rangle$, where $F'_1[f_w]=W+\delta(1)=W$},
-		\item {\small$J_2 = \langle F'_2\rangle$, where $F'_2[f_w]=W+\delta(2)=W+1$},
-		\item {\small$J_3 = \langle F'_3\rangle$, where $F'_3[f_w]=W+\delta(3)=W+\be$},
-		\item {\small$J_4 = \langle F'_4\rangle$, where $F'_4[f_w]=W+\delta(4)=W+\be^2$}
+		\item {$F_1'$, where $F_1'[f_W]=W+\delta(1)=W$},
+		\item {$F_2'$, where $F_2'[f_W]=W+\delta(2)=W+1$},
+		\item {$F_3'$, where $F_3'[f_W]=W+\delta(3)=W+\be$},
+		\item {$F_4'$, where $F_4'[f_W]=W+\delta(4)=W+\be^2$}
 	\ei
 	\vspace{0.1in}
 	\pause
-	\item Reducing the specification $f: Z+A\cdot B$ modulo these ideals, we get:
+	\item Reducing the specification $f: Z+A\cdot B$:
 \bi
-\item $rem_1 = f \xrightarrow[]{F'_1\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
-\item $rem_2 = f \xrightarrow[]{F'_2\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
-\item $rem_3 = f \xrightarrow[]{F'_3\cup F'_{0}}_+{\al^{27} (a_2b_1b_2)}$
-\item $rem_4 = f \xrightarrow[]{F'_4\cup F'_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
+\item $rem_1 = f \xrightarrow[]{F_1'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
+\item $rem_2 = f \xrightarrow[]{F_2'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
+\item $rem_3 = f \xrightarrow[]{F_3'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)}$
+\item $rem_4 = f \xrightarrow[]{F_4'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
 \ei \pause
-	\item Compute $GB(r_1\cdot r_2 \cdot r_3 \cdot r_4, F_0)=F_0$
+	\item $rem_1\cdot rem_2 \cdot rem_3 \cdot rem_4 \xrightarrow{F_0}_+0$
 	\item Target $W$ with nets $r_3$ and $rr_3$ admits MFR
 \ei
 \end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  16 MAR 2021 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  23 MAR 2021 21:05
 entering extended mode
 **./ISQED_presentation.tex
 (ISQED_presentation.tex
@@ -1044,7 +1044,7 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-11.
+12.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1phv.fd"
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
@@ -1054,32 +1054,25 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count344
 \l__pdf_internal_box=\box84
-) (ISQED_presentation.aux
-
-LaTeX Warning: Label `masusmontspec' multiply defined.
-
-
-LaTeX Warning: Label `masusmontspec' multiply defined.
-
-)
+) (ISQED_presentation.aux)
 \openout1 = `ISQED_presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1129,7 +1122,7 @@ LaTeX Font Info:    ... okay on input line 111.
 \makeMPintoPDFobject=\count350
 \everyMPtoPDFconversion=\toks54
 )
-Package hyperref Info: Link coloring OFF on input line 111.
+Package hyperref Info: Link coloring OFF on input line 112.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1142,67 +1135,67 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
  (ISQED_presentation.out) (ISQED_presentation.out)
 \@outlinefile=\write6
 \openout6 = `ISQED_presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 111.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 111.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/phv/m/it on input line 11
-1.
+2.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/phv/m/it on input line 1
-11.
+12.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 111.
+(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/phv/m/it on input line 111.
+(Font)                  OT1/cmr/m/it --> OT1/phv/m/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/phv/m/it on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 111.
+(Font)                  OT1/cmr/bx/it --> OT1/phv/m/it on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 111.
+(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 111.
+(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 111.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/phv/b/n --> OT1/phv/b/n on input line 111.
+(Font)                  OT1/phv/b/n --> OT1/phv/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 111.
+(Font)                  OT1/phv/m/n --> OT1/phv/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 111.
+(Font)                  OT1/phv/m/it --> OT1/phv/b/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 111.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 111
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 112.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 112
 .
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `norma
 l'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/phv/bx/it on input line 
-111.
+112.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
 
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/phv/bx/it on input line 
-111.
+112.
 
 (C:\Users\vikas\AppData\Roaming\MiKTeX\2.9\tex/latex/translator\translator-basi
 c-dictionary-English.dict
@@ -1235,59 +1228,59 @@ Package caption Info: End \AtBeginDocument code.
 <ISQED_logo.pdf, id=12, 601.13701pt x 363.99477pt>
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 111.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 112.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 116.
+(hyperref)                setting the option has no effect on input line 117.
 
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 138.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 139.
 (pdftex.def)             Requested size: 60.11722pt x 36.4016pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138
+LaTeX Font Info:    Trying to load font information for U+msa on input line 139
 .
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138
+LaTeX Font Info:    Trying to load font information for U+msb on input line 139
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <6> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <6> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <5> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 139.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <5> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 138.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 139.
  [1
 
 {C:/Users/vikas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./ISQED_log
 o.pdf>] (intro.tex
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 36.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 34.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 [2
 
@@ -1295,102 +1288,105 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 36.
 <mas_3_ddc_mfr_a.pdf, id=126, 675.86174pt x 751.09pt>
 File: mas_3_ddc_mfr_a.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_a.pdf>
-Package pdftex.def Info: mas_3_ddc_mfr_a.pdf  used on input line 47.
+Package pdftex.def Info: mas_3_ddc_mfr_a.pdf  used on input line 46.
 (pdftex.def)             Requested size: 175.7199pt x 195.27878pt.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <7> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 47.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <7> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 47.
 
-Overfull \vbox (7.57892pt too high) detected at line 47
+Overfull \vbox (7.57892pt too high) detected at line 46
  []
 
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 47.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 46.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 [3
 
  <./mas_3_ddc_mfr_a.pdf>]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 79.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [4
+<mas_3_ddc_mfr_b_bb.pdf, id=167, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b_bb.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_bb.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_bb.pdf  used on input line 57.
+(pdftex.def)             Requested size: 182.15219pt x 193.16754pt.
 
-]
+Overfull \vbox (5.46768pt too high) detected at line 57
+ []
+
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 79.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 57.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[4
+
+ <./mas_3_ddc_mfr_b_bb.pdf>]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <7> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <7> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 86.
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 86.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [5
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 79.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 86.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [6
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 79.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 86.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [7
-
-]) (prelim.tex
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 37.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 37.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 37.
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 37.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [8
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 37.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 86.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [8
+
+]) (prelim.tex
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 40.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [9
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 37.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 40.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [10
 
 ]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <12> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <12> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 59.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 59.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 40.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [11
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 59.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 40.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 
 [12
@@ -1398,417 +1394,467 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 59.
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 93.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 40.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [13
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 93.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [14
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 93.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [15
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 93.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [16
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 93.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [17
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [18
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 81.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [19
 
 ]
+File: mas_3_ddc_mfr_b_bb.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_bb.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_bb.pdf  used on input line 137.
+(pdftex.def)             Requested size: 182.15219pt x 193.16754pt.
+
+Overfull \vbox (5.46768pt too high) detected at line 137
+ []
+
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 137.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [20
+[20
 
 ]
+<field_containment.pdf, id=620, 348.98753pt x 235.49475pt>
+File: field_containment.pdf Graphic file (type pdf)
+<use field_containment.pdf>
+Package pdftex.def Info: field_containment.pdf  used on input line 147.
+(pdftex.def)             Requested size: 174.49333pt x 117.74707pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 147.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <12> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 147.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 147.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 147.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [21
 
-]
+ <./field_containment.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 167.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [22
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 167.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [23
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 167.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [24
 
 ]
-<GB.png, id=707, 749.6808pt x 133.4586pt>
-File: GB.png Graphic file (type png)
-<use GB.png>
-Package pdftex.def Info: GB.png  used on input line 207.
-(pdftex.def)             Requested size: 292.37433pt x 52.04863pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 207.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [25
 
- <./GB.png>]
-File: GB.png Graphic file (type png)
-<use GB.png>
-Package pdftex.def Info: GB.png  used on input line 207.
-(pdftex.def)             Requested size: 292.37433pt x 52.04863pt.
+]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 207.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [26
 
-]
-File: GB.png Graphic file (type png)
-<use GB.png>
-Package pdftex.def Info: GB.png  used on input line 207.
-(pdftex.def)             Requested size: 292.37433pt x 52.04863pt.
+]) (mfr.tex
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 207.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [27
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 217.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [28
 
-]) (sfr.tex
-File: mas_3_ddc_mfr_a.pdf Graphic file (type pdf)
-<use mas_3_ddc_mfr_a.pdf>
-Package pdftex.def Info: mas_3_ddc_mfr_a.pdf  used on input line 59.
-(pdftex.def)             Requested size: 175.7199pt x 195.27878pt.
-
-Overfull \vbox (7.57892pt too high) detected at line 59
- []
-
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 59.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[29
+[28
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [29
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [30
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [31
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 87.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [32
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [33
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [34
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [35
 
 ]
+<mas_3_ddc_mfr_b.pdf, id=1019, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 224.
+(pdftex.def)             Requested size: 168.14789pt x 178.31635pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 124.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 224.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [36
 
-]
+ <./mas_3_ddc_mfr_b.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [37
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [38
+
+[38
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [39
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 264.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [40
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [41
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [42
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [43
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-
-[44
+ [44
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [45
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [46
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 319.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [47
 
-]) (mfr.tex
+]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 32.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [48
 
 ]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 32.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [49
+<mas_3_ddc_mfr_b_00.pdf, id=1378, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b_00.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_00.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_00.pdf  used on input line 464.
+(pdftex.def)             Requested size: 196.16719pt x 208.03008pt.
 
-]
-File: mas_3_ddc_mfr_a.pdf Graphic file (type pdf)
-<use mas_3_ddc_mfr_a.pdf>
-Package pdftex.def Info: mas_3_ddc_mfr_a.pdf  used on input line 64.
-(pdftex.def)             Requested size: 162.21013pt x 180.26527pt.
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 64.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [50
+Overfull \vbox (20.33022pt too high) detected at line 464
+ []
 
-]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 464.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [51
+[49
 
-]
+ <./mas_3_ddc_mfr_b_00.pdf>]
+<mas_3_ddc_mfr_b_10.pdf, id=1419, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b_10.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_10.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_10.pdf  used on input line 472.
+(pdftex.def)             Requested size: 196.16719pt x 208.03008pt.
+
+Overfull \vbox (20.33022pt too high) detected at line 472
+ []
+
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 472.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [52
+[50
 
-]
+ <./mas_3_ddc_mfr_b_10.pdf>]
+<mas_3_ddc_mfr_b_01.pdf, id=1459, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b_01.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_01.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_01.pdf  used on input line 480.
+(pdftex.def)             Requested size: 196.16719pt x 208.03008pt.
+
+Overfull \vbox (20.33022pt too high) detected at line 480
+ []
+
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 480.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[51
+
+ <./mas_3_ddc_mfr_b_01.pdf>]
+<mas_3_ddc_mfr_b_11.pdf, id=1499, 700.60188pt x 742.96964pt>
+File: mas_3_ddc_mfr_b_11.pdf Graphic file (type pdf)
+<use mas_3_ddc_mfr_b_11.pdf>
+Package pdftex.def Info: mas_3_ddc_mfr_b_11.pdf  used on input line 488.
+(pdftex.def)             Requested size: 196.16719pt x 208.03008pt.
+
+Overfull \vbox (20.33022pt too high) detected at line 488
+ []
+
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 488.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+[52
+
+ <./mas_3_ddc_mfr_b_11.pdf>]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [53
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [54
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [55
 
-]
+]) (objs.tex
+<r1_clean_paths.pdf, id=1615, 97.56975pt x 72.67151pt>
+File: r1_clean_paths.pdf Graphic file (type pdf)
+<use r1_clean_paths.pdf>
+Package pdftex.def Info: r1_clean_paths.pdf  used on input line 151.
+(pdftex.def)             Requested size: 146.35425pt x 109.00696pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 130.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [56
 
-]
-<mas_3_ddc_mfr_b.pdf, id=1521, 700.60188pt x 742.96964pt>
-File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
-<use mas_3_ddc_mfr_b.pdf>
-Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 141.
-(pdftex.def)             Requested size: 168.14789pt x 178.31635pt.
+ <./r1_clean_paths.pdf>]
+File: r1_clean_paths.pdf Graphic file (type pdf)
+<use r1_clean_paths.pdf>
+Package pdftex.def Info: r1_clean_paths.pdf  used on input line 151.
+(pdftex.def)             Requested size: 146.35425pt x 109.00696pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 141.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [57
 
-[57
-
- <./mas_3_ddc_mfr_b.pdf>]
+]
+File: r1_clean_paths.pdf Graphic file (type pdf)
+<use r1_clean_paths.pdf>
+Package pdftex.def Info: r1_clean_paths.pdf  used on input line 151.
+(pdftex.def)             Requested size: 146.35425pt x 109.00696pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [58
 
 ]
+<r1_f2_2.pdf, id=1700, 194.73833pt x 101.57948pt>
+File: r1_f2_2.pdf Graphic file (type pdf)
+<use r1_f2_2.pdf>
+Package pdftex.def Info: r1_f2_2.pdf  used on input line 177.
+(pdftex.def)             Requested size: 175.26286pt x 91.42067pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 177.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [59
 
-]
+ <./r1_f2_2.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 185.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [60
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 219.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [61
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [62
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [63
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [64
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [65
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 242.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 207.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [66
 
 ]
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 245.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 245.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 
 [67
@@ -1816,1603 +1862,60 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [68
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [69
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 261.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [70
 
 ]
-File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
-<use mas_3_ddc_mfr_b.pdf>
-Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 271.
-(pdftex.def)             Requested size: 168.14789pt x 178.31635pt.
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 271.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [71
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [72
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [73
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 290.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [74
 
-]
+])
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 209.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [75
 
 ]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [76
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [77
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [78
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [79
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [80
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 316.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [81
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 342.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-
-[82
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [83
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [84
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 368.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [85
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [86
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [87
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 397.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [88
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [89
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [90
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 420.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [91
-
-]) (objs.tex
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [92
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [93
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [94
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-
-[95
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [96
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 153.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [97
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 178.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [98
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 178.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [99
-
-]
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <6> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 211.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
-                                                  {5} & \mb {80 } & 100 & 0....
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
-                                                  {80 } & 100 & 0.8 & 6 & 0....
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
-                                                  {5} & \mb {160 } & 120 & 2...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
-                                                  {160 } & 120 & 2.8 & 8 & 0...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
-                                                  {3} & \mb {192 } & 160 & 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
-                                                  {192 } & 160 & 11.2 & 5 & ...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
-                                                  {2} & \mb {96 } & 240 & 24...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
-                                                  {96 } & 240 & 24.5 & 5 & 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
-                                                  {2} & \mb {128 } & 370 & 4...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
-                                                  {128 } & 370 & 43.2 & 5 & ...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
-                                                  {5} & \mb {815 } & 550 & 6...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
-                                                  {815 } & 550 & 69.8 & 6 & ...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
-                                                  {2} & \mb {466 } & 750 & 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
-                                                  {466 } & 750 & 119 & 3 & 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
-                                                  {2} & \mb {566 } & 1300& 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
-                                                  {566 } & 1300& 190 & 2 & 3...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
-                                                  {2} & \mb {818 } & 2400& 3...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
-                                                  {818 } & 2400& 384 & 2 & 1...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
-                                                  {2} & \mb {1042} & 5000& 8...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
-                                                  {1042} & 5000& 827 & 5 & 2...
-l.211 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 211.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[100
-
-]pdfTeX warning (ext4): destination with the same identifier (name{masusmontspe
-c}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.244 \end{frame}
-                 
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
-                                                  {5} & \mb {80 } & 100 & 0....
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
-                                                  {80 } & 100 & 0.9 & 16 & 0...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
-                                                  {5} & \mb {160 } & 120 & 2...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
-                                                  {160 } & 120 & 2.8 & 32 & ...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
-                                                  {3} & \mb {192 } & 160 & 9...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
-                                                  {192 } & 160 & 9.6 & 47 & ...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
-                                                  {2} & \mb {96 } & 240 & 21...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
-                                                  {96 } & 240 & 21 & 96 & 1....
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
-                                                  {2} & \mb {128 } & 370 & 3...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
-                                                  {128 } & 370 & 35.8 & 128 ...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
-                                                  {5} & \mb {815 } & 550 & 5...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
-                                                  {815 } & 550 & 57.5 & 128 ...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
-                                                  {2} & \mb {466 } & 750 & 1...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
-                                                  {466 } & 750 & 112 & 233 &...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
-                                                  {2} & \mb {566 } & 1300& 1...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
-                                                  {566 } & 1300& 171 & 283 &...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
-                                                  {2} & \mb {818 } & 2400& 3...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
-                                                  {818 } & 2400& 340 & 409 &...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
-                                                  {2} & \mb {1042} & 5000& 6...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
-                                                  {1042} & 5000& 663 & 12 & ...
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \td 
-                    
-l.244 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 244.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[101
-
-]pdfTeX warning (ext4): destination with the same identifier (name{masusmontspe
-c}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 \end{frame}
-                 
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...} \\ \hline \mb {16} & \mb 
-                                                  {5} & \mb {80 } & 100 & 0....
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ...e \mb {16} & \mb {5} & \mb 
-                                                  {80 } & 100 & 0.9 & 7 & 0....
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {32 } & \mb 
-                                                  {5} & \mb {160 } & 120 & 2...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {32 } & \mb {5} & \mb 
-                                                  {160 } & 120 & 2.9 & 13 & ...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {64 } & \mb 
-                                                  {3} & \mb {192 } & 160 & 1...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {64 } & \mb {3} & \mb 
-                                                  {192 } & 160 & 10.6 & 64 &...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {96 } & \mb 
-                                                  {2} & \mb {96 } & 240 & 24...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {96 } & \mb {2} & \mb 
-                                                  {96 } & 240 & 24.8 & 96 & ...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {128} & \mb 
-                                                  {2} & \mb {128 } & 370 & 4...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {128} & \mb {2} & \mb 
-                                                  {128 } & 370 & 43.2 & 128 ...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {163} & \mb 
-                                                  {5} & \mb {815 } & 550 & 7...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {163} & \mb {5} & \mb 
-                                                  {815 } & 550 & 71.6 & 22 &...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {233} & \mb 
-                                                  {2} & \mb {466 } & 750 & 1...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {233} & \mb {2} & \mb 
-                                                  {466 } & 750 & 122 & 233 &...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {283} & \mb 
-                                                  {2} & \mb {566 } & 1300& 2...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {283} & \mb {2} & \mb 
-                                                  {566 } & 1300& 208 & 4 & 8...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {409} & \mb 
-                                                  {2} & \mb {818 } & 2400& 3...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {409} & \mb {2} & \mb 
-                                                  {818 } & 2400& 368 & 409 &...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \mb 
-                    
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \\ \hline \mb {571} & \mb 
-                                                  {2} & \mb {1042} & 5000& 8...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\beamer@doifinframe ... \mb {571} & \mb {2} & \mb 
-                                                  {1042} & 5000& 813 & 5 & 2...
-l.277 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 277.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[102
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [103
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [104
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [105
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 346.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [106
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 374.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [107
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 374.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [108
-
-])
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 208.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [109
-
-] (bkp1.tex
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 29.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [110
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 53.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [111
-
-]
-! Undefined control sequence.
-<argument> ...gn {\hrule height 1pt} \par 1 & \mb 
-                                                  {16} & \mb {7} & \mb {112 ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...height 1pt} \par 1 & \mb {16} & \mb 
-                                                  {7} & \mb {112 } & 100 & 0...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...} \par 1 & \mb {16} & \mb {7} & \mb 
-                                                  {112 } & 100 & 0.8 & 11 & ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... 0.55 & 33 & 33.6 \\ \hline 2 & \mb 
-                                                  {32 } & \mb {5} & \mb {160...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... 33.6 \\ \hline 2 & \mb {32 } & \mb 
-                                                  {5} & \mb {160 } & 120 & 2...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 2 & \mb {32 } & \mb {5} & \mb 
-                                                  {160 } & 120 & 2.8 & 8 & 0...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...& 0.8 & 244 & 245 \\ \hline 3 & \mb 
-                                                  {64 } & \mb {3} & \mb {192...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...& 245 \\ \hline 3 & \mb {64 } & \mb 
-                                                  {3} & \mb {192 } & 160 & 1...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 3 & \mb {64 } & \mb {3} & \mb 
-                                                  {192 } & 160 & 11.2 & 5 & ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...0.8 & 0.2 & 4 & 5 \\ \hline 4 & \mb 
-                                                  {96 } & \mb {2} & \mb {96 ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...4 & 5 \\ \hline 4 & \mb {96 } & \mb 
-                                                  {2} & \mb {96 } & 240 & 24...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 4 & \mb {96 } & \mb {2} & \mb 
-                                                  {96 } & 240 & 24.5 & 5 & 1...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ....66 & 35.5 & 38.6 \\ \hline 5 & \mb 
-                                                  {128} & \mb {2} & \mb {128...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... 38.6 \\ \hline 5 & \mb {128} & \mb 
-                                                  {2} & \mb {128 } & 370 & 4...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 5 & \mb {128} & \mb {2} & \mb 
-                                                  {128 } & 370 & 43.2 & 5 & ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...& 6 & 2 & 73 & 81 \\ \hline 6 & \mb 
-                                                  {163} & \mb {5} & \mb {815...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... & 81 \\ \hline 6 & \mb {163} & \mb 
-                                                  {5} & \mb {815 } & 550 & 6...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 6 & \mb {163} & \mb {5} & \mb 
-                                                  {815 } & 550 & 69.8 & 6 & ...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...& 4.6 & 37 & 57.6 \\ \hline 7 & \mb 
-                                                  {409} & \mb {2} & \mb {818...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... 57.6 \\ \hline 7 & \mb {409} & \mb 
-                                                  {2} & \mb {818 } & 2400& 3...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 7 & \mb {409} & \mb {2} & \mb 
-                                                  {818 } & 2400& 384 & 2 & 2...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... & 8 & 928 & 1146 \\ \hline 8 & \mb 
-                                                  {571} & \mb {2} & \mb {104...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... 1146 \\ \hline 8 & \mb {571} & \mb 
-                                                  {2} & \mb {1042} & 5000& 8...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...hline 8 & \mb {571} & \mb {2} & \mb 
-                                                  {1042} & 5000& 827 & 5 & 2...
-l.101 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 101.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[112
-
-])
 \tf@nav=\write7
 \openout7 = `ISQED_presentation.nav'.
 
@@ -3423,45 +1926,39 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 101.
 \openout9 = `ISQED_presentation.snm'.
 
  (ISQED_presentation.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `ISQED_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22173 strings out of 479584
- 419537 string characters out of 2871496
- 775403 words of memory out of 3000000
- 38500 multiletter control sequences out of 15000+200000
- 472180 words of font info for 154 fonts, out of 3000000 for 9000
+ 22078 strings out of 479584
+ 418885 string characters out of 2871496
+ 719428 words of memory out of 3000000
+ 38480 multiletter control sequences out of 15000+200000
+ 465585 words of font info for 146 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,17n,132p,683b,645s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 131i,16n,132p,464b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic
-/uhvro8a.pfb>
-Output written on ISQED_presentation.pdf (112 pages, 1061980 bytes).
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvro8a.pfb>
+Output written on ISQED_presentation.pdf (75 pages, 1072966 bytes).
 PDF statistics:
- 3090 PDF objects out of 3580 (max. 8388607)
- 230 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2240 PDF objects out of 2487 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
