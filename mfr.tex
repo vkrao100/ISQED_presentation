@@ -158,6 +158,8 @@
 	\bi
 		\item How are elements $\al$, $\be$, and $\ga$ related?
 	\ei
+	\pause
+	\item Solved using Univariate Polynomial Factorization and properties of finite fields
 	\vspace{0.1in}
 \ei
 
@@ -179,39 +181,39 @@
 % \ei
 % \end{frame}
 
-\begin{frame}{\large Contribution: Computing $P_k(x)$}
-\bi
-	\vspace{0.1in}
-	\item Property of finite fields, for any element $\phi \in \F_q$, $\phi^{q-1} = 1$
-	\vspace{0.1in}
-	\pause
-	\bi
-		\item $\ga = \al^{(2^k-1)/(2^n-1)} = \al^{\lambda}$
-		\item $\be = \al^{(2^k-1)/(2^m-1)} = \al^{\mu}$
-	\ei
-	\pause
-	\vspace{0.1in}
-	\item Univariate Polynomial Factorization (UPF)
-	\pause
-	\vspace{0.1in}
-	\bi
-		\item Obtain UPFs of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$ in $\F_2[x]$
-	\ei
-	% \bi
-	% 	\item Coefficients will be in $\Ftwo$ and degrees will be less than $\lambda$ and $\mu$, respectively.
-	% 	\bi
-	% 		\item $P_n(x^{\lambda})=P_{n1}^{a1}\cdot P_{n2}^{a2}\cdots P_{nl}^{al}$, and 
-	% 		\item $P_m(x^{\mu}) = P_{m1}^{b1}\cdot P_{m2}^{b2}\cdots P_{mg}^{bg}$
-	% 	\ei
-	% \ei
-	\pause
-	\vspace{0.1in}
-	\item Then, $\exists P_{k}(x) \in \F_2[x]$ as a common factor of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$, such that:
-	\bi
-		\item $P_{k}(x)$ is a degree-$k$ primitive polynomial in $\F_2[x]$ with $P_k(\al)=0$
-	\ei
-\ei
-\end{frame}
+% \begin{frame}{\large Contribution: Computing $P_k(x)$}
+% \bi
+% 	\vspace{0.1in}
+% 	\item Property of finite fields, for any element $\phi \in \F_q$, $\phi^{q-1} = 1$
+% 	\vspace{0.1in}
+% 	\pause
+% 	\bi
+% 		\item $\ga = \al^{(2^k-1)/(2^n-1)} = \al^{\lambda}$
+% 		\item $\be = \al^{(2^k-1)/(2^m-1)} = \al^{\mu}$
+% 	\ei
+% 	\pause
+% 	\vspace{0.1in}
+% 	\item Univariate Polynomial Factorization (UPF)
+% 	\pause
+% 	\vspace{0.1in}
+% 	\bi
+% 		\item Obtain UPFs of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$ in $\F_2[x]$
+% 	\ei
+% 	% \bi
+% 	% 	\item Coefficients will be in $\Ftwo$ and degrees will be less than $\lambda$ and $\mu$, respectively.
+% 	% 	\bi
+% 	% 		\item $P_n(x^{\lambda})=P_{n1}^{a1}\cdot P_{n2}^{a2}\cdots P_{nl}^{al}$, and 
+% 	% 		\item $P_m(x^{\mu}) = P_{m1}^{b1}\cdot P_{m2}^{b2}\cdots P_{mg}^{bg}$
+% 	% 	\ei
+% 	% \ei
+% 	\pause
+% 	\vspace{0.1in}
+% 	\item Then, $\exists P_{k}(x) \in \F_2[x]$ as a common factor of $P_n(x^{\lambda})$ and $P_m(x^{\mu})$, such that:
+% 	\bi
+% 		\item $P_{k}(x)$ is a degree-$k$ primitive polynomial in $\F_2[x]$ with $P_k(\al)=0$
+% 	\ei
+% \ei
+% \end{frame}
 
 \begin{frame}{\large Application: Word-level representation}
 \begin{figure}[hbt]
@@ -223,28 +225,28 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Application: Computing $P_k(x)$}
-\bi
-\item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = \al^9,~~\be=\alpha^{21}$
-\pause
-\vspace{0.1in}
-	\item Composite field: $k=LCM(2,3)=6$
-	\vspace{0.1in}
-	\pause
-	\bi
-		\item $ UPF(P_3(x^9)) = (x^9)^3+(x^9)+1 =
-  \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^4+x^2+x+1)(x^3+x+1);$
-		\vspace{0.1in}
-		\pause
-		\item $UPF(P_2(x^{21})) = (x^{21})^2+(x^{21})+1 =
-  \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^5+x^3+x^2+1)
-  (x^6+x^5+x^4+x+1)(x^6+x+1)(x^6+x^3+1);$
-		% \pause
-		% \vspace{0.1in}
-		% \item We choose $P_6(x)=x^6+x^5+1$ as the required $P_k(x)$.
-	\ei
-\ei
-\end{frame}
+% \begin{frame}{\large Application: Computing $P_k(x)$}
+% \bi
+% \item $P_3(x) = x^3+x+1,~~P_2(x) = x^2+x+1,~~\ga = \al^9,~~\be=\alpha^{21}$
+% \pause
+% \vspace{0.1in}
+% 	\item Composite field: $k=LCM(2,3)=6$
+% 	\vspace{0.1in}
+% 	\pause
+% 	\bi
+% 		\item $ UPF(P_3(x^9)) = (x^9)^3+(x^9)+1 =
+%   \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^4+x^2+x+1)(x^3+x+1);$
+% 		\vspace{0.1in}
+% 		\pause
+% 		\item $UPF(P_2(x^{21})) = (x^{21})^2+(x^{21})+1 =
+%   \textcolor{red}{(x^6+x^5+x^2+x+1)}\textcolor{green}{(x^6+x^5+1)}\textcolor{green}{(x^6+x^4+x^3+x+1)}(x^6+x^5+x^3+x^2+1)
+%   (x^6+x^5+x^4+x+1)(x^6+x+1)(x^6+x^3+1);$
+% 		% \pause
+% 		% \vspace{0.1in}
+% 		% \item We choose $P_6(x)=x^6+x^5+1$ as the required $P_k(x)$.
+% 	\ei
+% \ei
+% \end{frame}
 
 % \begin{frame}{\large Circuit polynomials over $\Fkk$}
 % \bi
@@ -454,6 +456,29 @@
 % 	\ei
 % \ei
 % \end{frame}
+\begin{frame}{\large Contribution: Multi-fix Rectification Check}
+\bi
+	\item Constructing the $F'_l$:
+	\bi
+		\item {$F_1'$, where $F_1'[f_W]=W+\delta(1)=W$},
+		\item {$F_2'$, where $F_2'[f_W]=W+\delta(2)=W+1$},
+		\item {$F_3'$, where $F_3'[f_W]=W+\delta(3)=W+\be$},
+		\item {$F_4'$, where $F_4'[f_W]=W+\delta(4)=W+\be^2$}
+	\ei
+	\vspace{0.1in}
+	\pause
+	\item Reducing the specification $f: Z+A\cdot B$:
+\bi
+\item $rem_1 = f \xrightarrow[]{F_1'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
+\item $rem_2 = f \xrightarrow[]{F_2'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
+\item $rem_3 = f \xrightarrow[]{F_3'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)}$
+\item $rem_4 = f \xrightarrow[]{F_4'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
+\ei \pause
+	\item $rem_1\cdot rem_2 \cdot rem_3 \cdot rem_4 \xrightarrow{F_0}_+0$
+	\item Target $W$ with nets $r_3$ and $rr_3$ admits MFR
+\ei
+\end{frame}
+
 
 \begin{frame}{\large Rectification check: Remainder generation}
 \begin{figure}[hbt]
@@ -487,28 +512,6 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Contribution: Multi-fix Rectification Check}
-\bi
-	\item Constructing the $F'_l$:
-	\bi
-		\item {$F_1'$, where $F_1'[f_W]=W+\delta(1)=W$},
-		\item {$F_2'$, where $F_2'[f_W]=W+\delta(2)=W+1$},
-		\item {$F_3'$, where $F_3'[f_W]=W+\delta(3)=W+\be$},
-		\item {$F_4'$, where $F_4'[f_W]=W+\delta(4)=W+\be^2$}
-	\ei
-	\vspace{0.1in}
-	\pause
-	\item Reducing the specification $f: Z+A\cdot B$:
-\bi
-\item $rem_1 = f \xrightarrow[]{F_1'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)+\al^{36} (a_2b_2)}$
-\item $rem_2 = f \xrightarrow[]{F_2'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)+\al^{36} (a_2b_2)}$
-\item $rem_3 = f \xrightarrow[]{F_3'\cup F_{0}}_+{\al^{27} (a_2b_1b_2)}$
-\item $rem_4 = f \xrightarrow[]{F_4'\cup F_{0}}_+{\al^{27} (a_2b_1b_2+a_2b_1)}$
-\ei \pause
-	\item $rem_1\cdot rem_2 \cdot rem_3 \cdot rem_4 \xrightarrow{F_0}_+0$
-	\item Target $W$ with nets $r_3$ and $rr_3$ admits MFR
-\ei
-\end{frame}
 
 % \begin{frame}{\large Future work: Rectification function}
 
