@@ -39,11 +39,38 @@
 \ei
 \end{frame}
 
+\begin{frame}{\large Motivation: Finite Field Circuits}
+\bi
+	\item Applications:
+	\bi
+		\item Cryptography: RSA, Ellyptic Curve Cryptography (ECC) 
+		\item Error Correcting Codes, Digital Signal Processing, RFID, etc.
+		\pause
+		\bi
+			\item Crypto-system bugs can leak secret keys [{\it Biham. et al}, Crypto'08]
+			\item RFID tag cloning could cause counterfeiting [{\it Batina. et al}, Security'09]
+		\ei
+		\pause
+		\item Large datapath sizes ($n$) in ECC crypto systems 
+		\bi
+			\item $\Fkn$ with $n=163, 233, 283, 409, 571$ (NIST standard)
+		\ei
+	\ei
+	\pause
+	\vspace{0.1in}
+	\item Rectification: 
+	\bi
+		% \item Arithmetic circuits mostly custom designed; potential for errors
+		\item Automated debugging
+		\item Synthesize sub-functions as opposed to complete redesign
+	\ei
+\ei
+\end{frame}
+
 \begin{frame}{\large Preliminaries: Field Construction}
 \bi
 	\item $\Fkn = \F_2[x]\pmod{P_n(x)}$ 
 	\bi
-		\pause
 		\item $P_n(x) \in \F_2[x]$ irreducible polynomial of degree $n$
 		\pause
 		\item Operations performed $\pmod{P_n(x)}$ 
