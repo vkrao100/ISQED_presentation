@@ -426,36 +426,36 @@
 % \ei
 % \end{frame}
 
-\begin{frame}{\large MFR Contribution: Rectification Check}
-%ATPG V() V() = empty
-%we have an algebraic proof which is there in the proposal
-\bi
-	\item Multi-fix rectification at target $W$
-	\vspace{0.1in}
-	\bi
-		\item Construct the following polynomial sets:
-		\begin{align*}
-			F_l' =\langle f_1,\dots,f_W=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
-			% \text{ where $F_l'$ is obtained from $F'$ by replacing } \\
-			% f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,\text{ and } \\
-  			Where~(\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
-		\end{align*}
-		\pause
-		\item Reduce the specification $f: Z+A\cdot B$ modulo these sets: 
-		\bi
-			\item $f\xrightarrow{F_l', F_0}_+rem_l $, $\forall 1 \leq l \leq 2^m$
-		\ei
-		% \item Let $V_{\Fq}(rem_l)$ denote the varieties of the respective $rem_l$'s
-		\vspace{0.2in}
-		\pause
-		\item Multi-fix rectification exists at target $W$: \\  
-				\centering
-				{\bf if and only if} $ \prod_{l=1}^{2^m} rem_l \xrightarrow{F_0}_+0$
-	\ei
-\ei
-\end{frame}
+% \begin{frame}{\large MFR Contribution: Rectification Check}
+% %ATPG V() V() = empty
+% %we have an algebraic proof which is there in the proposal
+% \bi
+% 	\item Multi-fix rectification at target $W$
+% 	\vspace{0.1in}
+% 	\bi
+% 		\item Construct the following polynomial sets:
+% 		\begin{align*}
+% 			F_l' =\langle f_1,\dots,f_W=W+\delta[l],\dots,f_s\rangle,1 \leq l \leq 2^m, \\
+% 			% \text{ where $F_l'$ is obtained from $F'$ by replacing } \\
+% 			% f_W \in F' \text{ with } f'_W: W + \delta[l], 1\leq l \leq 2^m,\text{ and } \\
+%   			Where~(\delta[1],\dots,\delta[2^{m}]) =(0,1,\be,\dots,\be^{2^m-2}).
+% 		\end{align*}
+% 		\pause
+% 		\item Reduce the specification $f: Z+A\cdot B$ modulo these sets: 
+% 		\bi
+% 			\item $f\xrightarrow{F_l', F_0}_+rem_l $, $\forall 1 \leq l \leq 2^m$
+% 		\ei
+% 		% \item Let $V_{\Fq}(rem_l)$ denote the varieties of the respective $rem_l$'s
+% 		\vspace{0.2in}
+% 		\pause
+% 		\item Multi-fix rectification exists at target $W$: \\  
+% 				\centering
+% 				{\bf if and only if} $ \prod_{l=1}^{2^m} rem_l \xrightarrow{F_0}_+0$
+% 	\ei
+% \ei
+% \end{frame}
 
-\begin{frame}{\large Application: Remainder generation}
+\begin{frame}{\large Rectification check: Remainder generation}
 \begin{figure}[hbt]
 \centering
     \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_00.pdf}
@@ -463,7 +463,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Application: Remainder generation}
+\begin{frame}{\large Rectification check: Remainder generation}
 \begin{figure}[hbt]
 \centering
     \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_10.pdf}
@@ -471,7 +471,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Application: Remainder generation}
+\begin{frame}{\large Rectification check: Remainder generation}
 \begin{figure}[hbt]
 \centering
     \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_01.pdf}
@@ -479,7 +479,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large Application: Remainder generation}
+\begin{frame}{\large Rectification check: Remainder generation}
 \begin{figure}[hbt]
 \centering
     \includegraphics[scale = 0.28]{mas_3_ddc_mfr_b_11.pdf}
@@ -487,7 +487,7 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{\large MFR Application: Rectification Check}
+\begin{frame}{\large Contribution: Multi-fix Rectification Check}
 \bi
 	\item Constructing the $F'_l$:
 	\bi
