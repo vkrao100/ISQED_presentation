@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  23 MAR 2021 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  24 MAR 2021 12:31
 entering extended mode
 **./ISQED_presentation.tex
 (ISQED_presentation.tex
@@ -1473,52 +1473,52 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 147.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [21
 
- <./field_containment.pdf>]
+ <./field_containment.pdf>]) (mfr.tex
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [22
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [23
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [24
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [25
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 193.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [26
 
-]) (mfr.tex
+]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [27
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 
 [28
@@ -1526,54 +1526,19 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [29
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 164.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [30
 
 ]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [31
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [32
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [33
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [34
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 214.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [35
-
-]
-<mas_3_ddc_mfr_b.pdf, id=1019, 700.60188pt x 742.96964pt>
+<mas_3_ddc_mfr_b.pdf, id=893, 700.60188pt x 742.96964pt>
 File: mas_3_ddc_mfr_b.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_b.pdf>
 Package pdftex.def Info: mas_3_ddc_mfr_b.pdf  used on input line 224.
@@ -1582,19 +1547,54 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 224.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [36
+ [31
 
  <./mas_3_ddc_mfr_b.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [37
+ [32
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [33
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [34
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [35
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [36
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [37
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
 
 [38
@@ -1602,75 +1602,26 @@ Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [39
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 247.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [40
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [41
 
 ]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [42
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [43
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [44
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [45
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [46
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [47
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 456.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [48
-
-]
-<mas_3_ddc_mfr_b_00.pdf, id=1378, 700.60188pt x 742.96964pt>
+<mas_3_ddc_mfr_b_00.pdf, id=1202, 700.60188pt x 742.96964pt>
 File: mas_3_ddc_mfr_b_00.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_b_00.pdf>
 Package pdftex.def Info: mas_3_ddc_mfr_b_00.pdf  used on input line 464.
@@ -1683,10 +1634,10 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 464.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[49
+[42
 
  <./mas_3_ddc_mfr_b_00.pdf>]
-<mas_3_ddc_mfr_b_10.pdf, id=1419, 700.60188pt x 742.96964pt>
+<mas_3_ddc_mfr_b_10.pdf, id=1242, 700.60188pt x 742.96964pt>
 File: mas_3_ddc_mfr_b_10.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_b_10.pdf>
 Package pdftex.def Info: mas_3_ddc_mfr_b_10.pdf  used on input line 472.
@@ -1699,10 +1650,10 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 472.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[50
+[43
 
  <./mas_3_ddc_mfr_b_10.pdf>]
-<mas_3_ddc_mfr_b_01.pdf, id=1459, 700.60188pt x 742.96964pt>
+<mas_3_ddc_mfr_b_01.pdf, id=1283, 700.60188pt x 742.96964pt>
 File: mas_3_ddc_mfr_b_01.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_b_01.pdf>
 Package pdftex.def Info: mas_3_ddc_mfr_b_01.pdf  used on input line 480.
@@ -1715,10 +1666,10 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 480.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[51
+[44
 
  <./mas_3_ddc_mfr_b_01.pdf>]
-<mas_3_ddc_mfr_b_11.pdf, id=1499, 700.60188pt x 742.96964pt>
+<mas_3_ddc_mfr_b_11.pdf, id=1323, 700.60188pt x 742.96964pt>
 File: mas_3_ddc_mfr_b_11.pdf Graphic file (type pdf)
 <use mas_3_ddc_mfr_b_11.pdf>
 Package pdftex.def Info: mas_3_ddc_mfr_b_11.pdf  used on input line 488.
@@ -1731,31 +1682,31 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 488.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-[52
+[45
 
  <./mas_3_ddc_mfr_b_11.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [53
+ [46
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [54
+ [47
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 511.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [55
+ [48
 
 ]) (objs.tex
-<r1_clean_paths.pdf, id=1615, 97.56975pt x 72.67151pt>
+<r1_clean_paths.pdf, id=1438, 97.56975pt x 72.67151pt>
 File: r1_clean_paths.pdf Graphic file (type pdf)
 <use r1_clean_paths.pdf>
 Package pdftex.def Info: r1_clean_paths.pdf  used on input line 151.
@@ -1764,7 +1715,7 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [56
+ [49
 
  <./r1_clean_paths.pdf>]
 File: r1_clean_paths.pdf Graphic file (type pdf)
@@ -1775,7 +1726,7 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [57
+ [50
 
 ]
 File: r1_clean_paths.pdf Graphic file (type pdf)
@@ -1786,10 +1737,10 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 151.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [58
+ [51
 
 ]
-<r1_f2_2.pdf, id=1700, 194.73833pt x 101.57948pt>
+<r1_f2_2.pdf, id=1524, 194.73833pt x 101.57948pt>
 File: r1_f2_2.pdf Graphic file (type pdf)
 <use r1_f2_2.pdf>
 Package pdftex.def Info: r1_f2_2.pdf  used on input line 177.
@@ -1798,122 +1749,115 @@ File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 177.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [59
+ [52
 
  <./r1_f2_2.pdf>]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [60
+ [53
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [54
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [55
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [56
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [57
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [58
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 250.
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 250.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+ [59
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 278.
+(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
+
+[60
+
+]
+File: ISQED_logo.pdf Graphic file (type pdf)
+<use ISQED_logo.pdf>
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 306.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [61
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 413.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [62
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 413.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [63
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 413.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [64
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 202.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 413.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [65
 
 ]
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 207.
+Package pdftex.def Info: ISQED_logo.pdf  used on input line 413.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
  [66
-
-]
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 245.
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 245.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
-
-[67
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 273.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [68
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 301.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [69
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [70
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [71
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [72
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [73
-
-]
-File: ISQED_logo.pdf Graphic file (type pdf)
-<use ISQED_logo.pdf>
-Package pdftex.def Info: ISQED_logo.pdf  used on input line 408.
-(pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [74
 
 ])
 File: ISQED_logo.pdf Graphic file (type pdf)
 <use ISQED_logo.pdf>
 Package pdftex.def Info: ISQED_logo.pdf  used on input line 209.
 (pdftex.def)             Requested size: 30.05861pt x 18.20079pt.
- [75
+ [67
 
 ]
 \tf@nav=\write7
@@ -1930,13 +1874,13 @@ Package rerunfilecheck Info: File `ISQED_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22078 strings out of 479584
- 418885 string characters out of 2871496
- 719428 words of memory out of 3000000
- 38480 multiletter control sequences out of 15000+200000
+ 22056 strings out of 479584
+ 418685 string characters out of 2871496
+ 720428 words of memory out of 3000000
+ 38474 multiletter control sequences out of 15000+200000
  465585 words of font info for 146 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,16n,132p,464b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 131i,15n,132p,464b,653s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -1956,9 +1900,9 @@ sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
 am Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on ISQED_presentation.pdf (75 pages, 1072966 bytes).
+Output written on ISQED_presentation.pdf (67 pages, 1020406 bytes).
 PDF statistics:
- 2240 PDF objects out of 2487 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
+ 2034 PDF objects out of 2073 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -246,31 +246,31 @@
 \ei
 \end{frame}
 
-\begin{frame}{\large Circuit polynomials over $\Fkk$}
-\bi
-	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkk)$. Over $\F_2$, $-1=+1\pmod{2}$
-\ei
-	\begin{align*}
-		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
-		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
-		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
-		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
-	\end{align*}
-\pause
-\bi
-	\item Word-level polynomials with $\ga = \al^{\lambda}$ and $\be = \al^{\mu}$
-	% \bi 
-		% \item $\ga$ = primitive element of $\Fkn$, i.e. $P_n(\ga)=0$
-	% \ei
-\ei
-\begin{equation*}
-\begin{split}
- Output:& Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
- Input: & A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1} \\
- Patch: & W + w_0 +\beta \cdot w_1 + \dots +\beta^{m-1} \cdot w_{m-1}
-\end{split}
-\end{equation*}
-\end{frame}
+% \begin{frame}{\large Circuit polynomials over $\Fkk$}
+% \bi
+% 	\item Boolean logic gates in $\F_2 ~~(\F_2 \subset \Fkk)$. Over $\F_2$, $-1=+1\pmod{2}$
+% \ei
+% 	\begin{align*}
+% 		 z &=~ \sim a &\implies &z+a+1 &\pmod{2}\\
+% 		 z &= a \wedge b &\implies &z+a\cdot b &\pmod{2}\\
+% 		 z &= a \vee b &\implies &z+a\cdot b + a + b &\pmod{2}\\
+% 		 z &= a \oplus b &\implies &z+a+b &\pmod{2}
+% 	\end{align*}
+% \pause
+% \bi
+% 	\item Word-level polynomials with $\ga = \al^{\lambda}$ and $\be = \al^{\mu}$
+% 	% \bi 
+% 		% \item $\ga$ = primitive element of $\Fkn$, i.e. $P_n(\ga)=0$
+% 	% \ei
+% \ei
+% \begin{equation*}
+% \begin{split}
+%  Output:& Z + z_0 +\gamma \cdot  z_1 + \dots +\gamma^{n-1} \cdot z_{n-1}\\
+%  Input: & A + a_0 +\gamma \cdot a_1 + \dots +\gamma^{n-1} \cdot a_{n-1} \\
+%  Patch: & W + w_0 +\beta \cdot w_1 + \dots +\beta^{m-1} \cdot w_{m-1}
+% \end{split}
+% \end{equation*}
+% \end{frame}
 
 \begin{frame}{\large Circuit Polynomials and Setup}
 \bi
